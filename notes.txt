@@ -11,3 +11,10 @@ var componentType = new ComponentType(Translation.Il2CppType, ComponentType.Acce
                 var translation = EntityManager.GetComponentData<Translation>(entity);
                 MyLogger.LogInfo($"Translation:{translation.Value}");
             }
+            
+            
+            
+"Unity.Entities" addon for the game entities. https://docs.unity3d.com/Packages/co...ual/index.html
+
+Get game world object - WorldUtility.FindWorld("Client_0");
+And then World.GetExistingSystem<T>() to grab whatever system you are looking for.
