@@ -1,1 +1,13 @@
 dump all systems: WorldUtility.FindWorld("Client_0").Systems.GetEnumerator().list;
+
+Translation Component Query
+var componentType = new ComponentType(Translation.Il2CppType, ComponentType.AccessMode.ReadOnly);
+            var query = EntityManager.CreateEntityQuery(new[] { componentType });
+            MyLogger.LogInfo($"Query Count: {query.CalculateEntityCount()}");
+ 
+            var entities = query.ToEntityArray(Allocator.Temp);
+            foreach (var entity in entities)
+            {
+                var translation = EntityManager.GetComponentData<Translation>(entity);
+                MyLogger.LogInfo($"Translation:{translation.Value}");
+            }
