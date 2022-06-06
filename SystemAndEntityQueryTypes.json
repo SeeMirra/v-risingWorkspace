@@ -1,0 +1,2077 @@
+{
+    "SystemEntityQueryDump": {
+        "CompanionGameObjectUpdateSystem": [
+            "[0] CompanionGameObjectActiveSystemState [S],CompanionLink",
+            "[0] Prefab,CompanionGameObjectActiveSystemState,Disabled,CompanionLink",
+            "[0] CompanionGameObjectActiveSystemState,CompanionLink [S]"
+        ],
+        "CompanionGameObjectUpdateTransformSystem": [
+            "[0] CompanionGameObjectUpdateTransformSystemState [S],CompanionLink",
+            "[0] LocalToWorld,CompanionGameObjectUpdateTransformSystemState,CompanionLink",
+            "[0] CompanionGameObjectUpdateTransformSystemState,CompanionLink [S]"
+        ],
+        "CritterGroupSystem": [
+            "[5] CritterGroup,LocalToWorld",
+            "[5] CritterGroup,LocalToWorld,CritterDataBuffer [B]",
+            "[5] CritterGroup,CritterDataBuffer [B]",
+            "[463] Translation,User"
+        ],
+        "DayNightCycleSystem": [
+            "[1] DayNightCycle",
+            "[1] ServerTime",
+            "[1] ServerGameBalanceSettings",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.AbilityCast_SetupStartValues_Shared": [
+            "[8] EntityInput,Translation,Float3ModificationBuffer [B],Rotation,Movement,TargetDirection"
+        ],
+        "ProjectM.AbilityCastingStateSystem_Client": [
+            "[0] Dead,AbilityBar_Client",
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityIsCastingState",
+            "[0] AbilityCastAimPreviewActive"
+        ],
+        "ProjectM.AbilityCastStarted_SetupAbilityTargetSystem_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[1] AbilityTargetSource,EntityOwner,Buff,PrefabGUID"
+        ],
+        "ProjectM.AbilityDisableHeightCorrectionSystem_OnDestroy": [
+            "[0] DisableHeightCorrectionDuringCastModificationData,DisableHeightCorrectionDuringCast,DestroyTag,EntityOwner"
+        ],
+        "ProjectM.AbilityDisableHeightCorrectionSystem_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityCastEndedEvent"
+        ],
+        "ProjectM.AbilityModifyMovementDuringCastSystem_Shared": [
+            "[0] ModifyMovementDuringCastActive",
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityInterruptedEvent"
+        ],
+        "ProjectM.AbilityModifyRotationDuringCastSystem_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityCastFinishedEvent",
+            "[1] ModifyRotation,EntityOwner",
+            "[0] AbilityCastEndedEvent",
+            "[0] AbilityPostCastEndedEvent"
+        ],
+        "ProjectM.AbilityMoveDuringCastSystem_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[0] MoveDuringCastActive"
+        ],
+        "ProjectM.AbilityMoveStop_Shared": [
+            "[0] EntityOwner,AbilityIsCastingState"
+        ],
+        "ProjectM.AbilityRotateTowardAimDuringCastSystem_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[0] RotateTowardsAimDirectionDuringCastActive"
+        ],
+        "ProjectM.AbilityRunScriptsSystem_Client": [
+            "[0] AbilityCastEndedEvent"
+        ],
+        "ProjectM.AbilityStartCastingSystem_Client": [
+            "[8] EntityInput,UnitStats,AbilityBar_Shared,AbilityBar_Client,AbilityGroupSlotBuffer [B]",
+            "[1] LocalControlled",
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityCastFinishedEvent",
+            "[0] AbilityPostCastFinishedEvent",
+            "[0] AbilityCastEndedEvent",
+            "[0] AbilityPostCastEndedEvent",
+            "[0] AbilityInterruptedEvent"
+        ],
+        "ProjectM.AbilityStopSequenceOnInterrupt_Client": [
+            "[0] AbilityInterruptedEvent"
+        ],
+        "ProjectM.ActivePrisonSequenceSystem": [
+            "[2] Prisonstation,Translation,QueuedWorkstationCraftAction [B],Rotation"
+        ],
+        "ProjectM.ActivePylonstationSequenceSystem": [
+            "[1] Translation,Pylonstation,Rotation"
+        ],
+        "ProjectM.ActiveRefinementSequenceSystem": [
+            "[1] Translation,Refinementstation,Rotation"
+        ],
+        "ProjectM.ActiveResearchstationSequenceSystem": [
+            "[1] Translation,ResearchStation,Rotation,HaveUnlocksInStation,EditableTileModel"
+        ],
+        "ProjectM.ActiveSalvageSequenceSystem": [
+            "[1] Translation,Rotation,Salvagestation"
+        ],
+        "ProjectM.ActiveUnitSpawnerstationSequenceSystem": [
+            "[0] Translation,Rotation,UnitSpawnerstation"
+        ],
+        "ProjectM.ActiveWorkstationSequenceSystem": [
+            "[3] Translation,Workstation,QueuedWorkstationCraftAction [B],Rotation"
+        ],
+        "ProjectM.ActuallyDisableSystem": [
+            "[0] ToggleDisabledEvent"
+        ],
+        "ProjectM.AddDestroyDataSystem": [
+            "[0] DestroyTag,DestroyState [S]"
+        ],
+        "ProjectM.AgeSystem": [
+            "[5] UpdateAgeWhenDisabled [S],Age",
+            "[0] UpdateAgeWhenDisabled,Age"
+        ],
+        "ProjectM.AiDynamicCollisionSystem": [
+            "[7] PlayerCharacter [S],Dead [S],Translation,DynamicCollision,NetworkInterpolated_Shared,LastTranslation,CollisionRadius"
+        ],
+        "ProjectM.AiMoveSystem_Client": [
+            "[7] EntityInput,Dead [S],Translation,Velocity,MapCollision,NetworkInterpolated_Shared,AiMove_Shared"
+        ],
+        "ProjectM.AnalyticsReportingSystem": [
+            "[0] UnlockProgressionServerEvent",
+            "[0] AchievementClaimedServerEvent",
+            "[0] UserDownedServerEvent",
+            "[0] UserKillServerEvent",
+            "[1] LocalCharacter",
+            "[1] ServerGameBalanceSettings"
+        ],
+        "ProjectM.Apply_BuffModificationsSystem_Client": [
+            "[0] ModifyObstacleFadeoutBuff,Buff,SpawnTag,ModifyObstacleFadeoutModifications [S]"
+        ],
+        "ProjectM.AreaSequenceSystem": [
+            "[0] AreaSequence [B],Translation,Rotation,EntityOwner"
+        ],
+        "ProjectM.AssignTeamColorSystem": [
+            "[1] LocalUser,Controller",
+            "[8] Team,AssignTeamColor,HealthBarHUD",
+            "[8] Team,CharacterHUD,AssignTeamColor"
+        ],
+        "ProjectM.AttachSystem_Spawn": [
+            "[0] Attach,Attached [S],DisabledWaitingForSync [S]"
+        ],
+        "ProjectM.Audio.DebugSoundEventSystem": [
+            "[52] LocalToWorld,StudioEventInstance",
+            "[1] StudioListener,Rotation"
+        ],
+        "ProjectM.Audio.FootstepSystem": [
+            "[0] FootstepEvent"
+        ],
+        "ProjectM.Audio.IdleAISoundSystem": [
+            "[0] LocalToWorld,IdleAISoundBuffer [B]",
+            "[0] UninitializedAISound",
+            "[0] IdleAISound,IdleAISoundBuffer [B],AggroConsumer",
+            "[0] Dead,IdleAISoundBuffer [B],AggroConsumer"
+        ],
+        "ProjectM.Audio.StudioEventSystem": [
+            "[52] StudioEventInstance",
+            "[2] StudioEventParameterBuffer [B],StudioEventInstance",
+            "[52] LocalToWorld,StudioEventInstance",
+            "[0] Disabled,StudioEventInstance",
+            "[0] StudioEvent [S],StudioEventInstance",
+            "[0] Disabled [S],StudioEventInstance_Finished [S],StudioEvent,StudioEventInstance [S]"
+        ],
+        "ProjectM.Audio.StudioListenerSystem": [
+            "[1] LocalToWorld,StudioListener",
+            "[0] FakeTurnOffStudioListener"
+        ],
+        "ProjectM.Audio.UIAudioSystem": [
+            "[0] UISoundEvent"
+        ],
+        "ProjectM.BeforeTileModelUpdate": [
+            "[0] DisabledWaitingForTransform [S],DisabledTileModel [S],DestroyTag [S],TileModelRegistrationState,DisabledDueToTimeout [S]",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,DestroyTag,TileModelRegistrationState,DisabledDueToTimeout"
+        ],
+        "ProjectM.Behaviours.DisableNpcsSystem": [
+            "[7] EntityInput,MoveEntity"
+        ],
+        "ProjectM.BlueprintDestroySystem": [
+            "[310] BlueprintData,DismantleDestroyData",
+            "[0] BlueprintData,DestroyTag,DismantleDestroyData"
+        ],
+        "ProjectM.BonfireSystem_Client": [
+            "[0] Translation,Bonfire,Rotation"
+        ],
+        "ProjectM.BonfireSystemUpdateCloud": [
+            "[0] CloudCookie,Bonfire"
+        ],
+        "ProjectM.BuffSystem_Spawn_Client": [
+            "[0] Buff,SpawnTag",
+            "[1] ServerTime"
+        ],
+        "ProjectM.BuildMenuImpairSystem": [
+            "[0] BuildMenuImpairBuff,Buff,SpawnTag",
+            "[1] LocalUser"
+        ],
+        "ProjectM.CastleBuilding.CastleAreasTeamsSystem": [
+            "[124] CastleTeam,HandledEvent [S],CastleAreaConnection"
+        ],
+        "ProjectM.CastleBuilding.CastleFloorAndWallsUpdateSystem": [
+            "[0] AddedEvent,EntityEvent",
+            "[0] EntityEvent,UpdatedEvent",
+            "[0] EntityEvent,RemovedEvent",
+            "[0] EntityEvent,AddedEvent"
+        ],
+        "ProjectM.CastleBuilding.CastleFloorEvents": [
+            "[0] DisabledWaitingForTransform [S],CastleFloor,TilePosition,DisabledTileModel [S],EventData [S],DestroyTag [S],DisabledDueToTimeout [S]",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,EventData,DestroyTag,DisabledDueToTimeout",
+            "[0] EntityEvent"
+        ],
+        "ProjectM.CastleBuilding.CastleFloorUpdateEvents": [
+            "[0] DisabledWaitingForTransform [S],CastleFloor,TilePosition,DisabledTileModel [S],EventData,DestroyTag [S],DisabledDueToTimeout [S]"
+        ],
+        "ProjectM.CastleBuilding.CastleWallEvents": [
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],CastleWall,DestroyTag [S],DisabledDueToTimeout [S],EventData [S]",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,DestroyTag,DisabledDueToTimeout,EventData",
+            "[0] EntityEvent"
+        ],
+        "ProjectM.CastleBuilding.CastleWallUpdateEvents": [
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],CastleWall,DestroyTag [S],DisabledDueToTimeout [S],EventData"
+        ],
+        "ProjectM.CastleBuilding.CastleWorkstationEvents": [
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],DestroyTag [S],CastleWorkstation,EventData [S],DisabledDueToTimeout [S]",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,DestroyTag,EventData,DisabledDueToTimeout",
+            "[0] EntityEvent"
+        ],
+        "ProjectM.CastleBuilding.CastleWorkstationUpdateEvents": [
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],DestroyTag [S],CastleWorkstation,EventData,DisabledDueToTimeout [S]"
+        ],
+        "ProjectM.CastleBuilding.DisableShowOnlyInPreviewSystem_Client": [
+            "[0] DisabledTileModel [S],Disabled [S],CastleBuildingShowOnlyInPreview"
+        ],
+        "ProjectM.CastleBuilding.TerritoryFloorSystem": [
+            "[68] CastleFloor,Translation,TerritoryTile",
+            "[68] CastleFloor,TilePosition,TerritoryTile,EditableTileModel",
+            "[0] EntityEvent",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.CastleBuilding.UpdateTerritoryRelationToLocalPlayer": [
+            "[0] ClanModifiedEvent",
+            "[68] CastleFloor,TerritoryTile",
+            "[0] BuildMenuState",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.CastleIslandSystem": [
+            "[0] AdditionalChunkScene [S],CastleIsland",
+            "[1] WorldTypeSingleton"
+        ],
+        "ProjectM.ChangeKnockbackResistanceDuringCast_OnDestroy": [
+            "[0] ChangeKnockbackResistanceDuringCast,DestroyTag,EntityOwner"
+        ],
+        "ProjectM.ChangeKnockbackResistanceDuringCast_Shared": [
+            "[0] AbilityCastStartedEvent",
+            "[0] AbilityCastEndedEvent"
+        ],
+        "ProjectM.CheckInSunSystem": [
+            "[1] TakeDamageInSun",
+            "[4] LocalToWorld,CloudCookie,CloudLight [S]",
+            "[0] LocalToWorld,CloudCookie,CloudLight",
+            "[1] Translation,TakeDamageInSun",
+            "[1] Dead [S],Translation,TakeDamageInSun",
+            "[1] DayNightCycle",
+            "[1] Sun",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.CheckOnScreenSystem": [
+            "[1] HybridCameraData",
+            "[8] Translation,CheckOnScreen"
+        ],
+        "ProjectM.CheckWorldTypeDebugSystem": [
+            "[1] WorldTypeSingleton"
+        ],
+        "ProjectM.ChunkDataRemappingManager": [
+            "[0] TerrainChunkLoadedEvent",
+            "[1] WorldAssetSingleton"
+        ],
+        "ProjectM.ClaimedAchievementsClientSystem": [
+            "[0] AchievementClaimedServerEvent",
+            "[0] ClaimedAchievementsEvent"
+        ],
+        "ProjectM.CleanupInvalidRegisterPrefabRequests": [
+            "[0] RegisterPrefab",
+            "[0] EntityNameCollectionBuffer [B],Initialized [S]"
+        ],
+        "ProjectM.ClearAnimationStatesSystem": [
+            "[45] AnimationStateBuffer [B]"
+        ],
+        "ProjectM.ClientAdminConsoleCommandSystem": [
+            "[1] LocalUser,User",
+            "[463] User",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.ClientBootstrapSystem": [
+            "[0] StatusChangedEvent",
+            "[0] ReceivedPacket,ReceivedPacketBuffer [B]",
+            "[1] HailMessageStruct_Server",
+            "[1] GameDataInitializedSingleton"
+        ],
+        "ProjectM.ClientConsoleCommandSystem": [
+            "[42] SequenceInstance,EventStateElement [B],SequenceAsset",
+            "[2976] Prefab,CreateSequence,PrefabGUID",
+            "[1] LocalCharacter",
+            "[115] WallpaperStyles",
+            "[1] PerformanceSummaryElement [B]",
+            "[0] ClanInviteRequest",
+            "[463] User",
+            "[1] Team,LocalControlled"
+        ],
+        "ProjectM.CollisionDetectionSystem_Client": [
+            "[31] AiPointOfInterest,Translation,DynamicCollision,Door,Aggroable"
+        ],
+        "ProjectM.ConsumeRevealedMapEventSystem": [
+            "[0] RevealedMapEvent"
+        ],
+        "ProjectM.CorrectDynamicBodyTransformsSystem": [
+            "[0] CorrectDynamicBodyTransforms,EntityMatrixElement [B],SpawnTag"
+        ],
+        "ProjectM.CreateInputCommandsSystem": [
+            "[1] EntityInput,LocalUser,InputCommandBufferElement [B],Controller",
+            "[1] ClientNetworkState",
+            "[1] LocalUser",
+            "[0] ClientReplayPlayerEnabled"
+        ],
+        "ProjectM.CurveCollectionSystem": [
+            "[0] CurveData,RegisterPrefabEvent"
+        ],
+        "ProjectM.DeadSequenceSystem": [
+            "[0] PlayerCharacter [S],Dead,HybridModelUser",
+            "[0] Dead,Translation,DeadSequence,Rotation",
+            "[8] Dead [S],DeadSequence",
+            "[1] SyncedServerDebugSettings",
+            "[0] Disabled,RagdollDriven"
+        ],
+        "ProjectM.DeathMenuSystem": [
+            "[1] LocalControlled",
+            "[1] SpawnSleepingBuff,Buff"
+        ],
+        "ProjectM.DebugAttachSystem": [
+            "[0] AttachedDepth,Attached [S]"
+        ],
+        "ProjectM.DebugWorldCastleAreaBoundsSystem": [
+            "[0] Translation,DebugWorldCastleAreaBounds",
+            "[68] TileCastleAreaTag,TileBounds"
+        ],
+        "ProjectM.DebugWorldLineOfSightBoundsSystem": [
+            "[0] Translation,DebugWorldLineOfSightBounds",
+            "[402] TileLineOfSightTag,TileBounds"
+        ],
+        "ProjectM.DebugWorldRestrictionAreaBoundsSystem": [
+            "[0] Translation,DebugWorldRestrictionAreaBounds",
+            "[161] TileBounds,TileRestrictionAreaTag"
+        ],
+        "ProjectM.DebugWorldSurfaceFluffBoundsSystem": [
+            "[0] Translation,DebugWorldSurfaceFluffBounds",
+            "[221] TileBounds,TileSurfaceFluffTag"
+        ],
+        "ProjectM.DebugWorldTileCollisionBoundsSystem": [
+            "[0] Translation,DebugWorldTileCollisionBounds",
+            "[402] TileCollisionTag,TileBounds"
+        ],
+        "ProjectM.DebugWorldTileHeightBoundsSystem": [
+            "[0] Translation,DebugWorldTileHeightBounds",
+            "[163] TileHeightTag,TileBounds"
+        ],
+        "ProjectM.DebugWorldTilePlacementBoundsSystem": [
+            "[0] DebugWorldTilePlacementBounds,Translation",
+            "[717] TileBounds,TilePlacementTag"
+        ],
+        "ProjectM.DeserializeMapIconSystem": [
+            "[0] Translation,MapIconPosition"
+        ],
+        "ProjectM.Destroy_BuffModificationsSystem_Client": [
+            "[0] ModifyObstacleFadeoutBuff,DestroyTag,Buff,ModifyObstacleFadeoutModifications"
+        ],
+        "ProjectM.DestroyHealthChangeEventSystem": [
+            "[0] StatChangeEvent"
+        ],
+        "ProjectM.DestroyInFixed": [
+            "[0] DestroyTag,DestroyState"
+        ],
+        "ProjectM.DestroySystem_Client": [
+            "[0] DestroyTag,DestroyState",
+            "[0] DestroyTag"
+        ],
+        "ProjectM.DestroyTagChildrenSystem": [
+            "[0] DestroyTag"
+        ],
+        "ProjectM.DetachSystem_Client": [
+            "[0] Attach [S],Attached",
+            "[0] AttachedBuffer [B],AttachParentId"
+        ],
+        "ProjectM.DetectModificationLeaksSystem": [
+            "[0] DestroyTag"
+        ],
+        "ProjectM.DirtyTileBoundsManager": [
+            "[0] CustomDirtyTileBoundsEvent"
+        ],
+        "ProjectM.DisableWhenNoPlayersInRangeSystem_Client": [
+            "[0] Disabled [S],DestroyTag [S],DisabledDueToNoPlayersInRange",
+            "[0] ToggleDisabledEvent",
+            "[855] Translation,DestroyTag [S],Attach [S],DisableWhenNoPlayersInRange,IsConnected [S]",
+            "[2] Translation,Disabled,DisabledDueToInactivity [S],DestroyTag [S],DisableWhenNoPlayersInRange,DisabledDueToNoPlayersInRange"
+        ],
+        "ProjectM.DiscoveredMapZonesClientSystem": [
+            "[0] MapZoneDiscoveredEvent",
+            "[0] DiscoveredMapZonesEvent"
+        ],
+        "ProjectM.DrawColoredGridSystem": [
+            "[0] DrawGrid,DrawGridBuffer [B]"
+        ],
+        "ProjectM.EnableDestroyEarly": [
+            "[0] Disabled,DestroyTag,DestroyState"
+        ],
+        "ProjectM.EnableDestroyLate": [
+            "[0] Disabled,DestroyTag,DestroyState"
+        ],
+        "ProjectM.EnableDestroyLatest": [
+            "[0] Disabled,DestroyTag,DestroyState"
+        ],
+        "ProjectM.EntityControlSystem": [
+            "[463] EntityInput,InputCommandBufferElement [B],Controller",
+            "[1] LocalUser",
+            "[463] User,Controller"
+        ],
+        "ProjectM.EquipmentSystem_Client": [
+            "[49] Equippable,Equipped [S]",
+            "[30] Equippable,Equipped"
+        ],
+        "ProjectM.FactionLookupSystem": [
+            "[0] RegisterPrefab"
+        ],
+        "ProjectM.FadeToBlackSystem_Client": [
+            "[0] LifeTime,FadeToBlack_Manual [S],Age,FadeToBlack",
+            "[0] FadeToBlack_Manual,FadeToBlack"
+        ],
+        "ProjectM.FreeCameraSystem": [
+            "[0] FreeCameraState,Translation,FreeCamera,StudioListener,Rotation,CameraTarget",
+            "[0] FreeCameraState,Translation,FreeCamera,Rotation,CameraTarget"
+        ],
+        "ProjectM.GallopBuffSystem_Destroy": [
+            "[0] DestroyTag,GallopBuff,Buff"
+        ],
+        "ProjectM.GallopBuffSystem_Spawn": [
+            "[0] GallopBuff,Buff,SpawnTag"
+        ],
+        "ProjectM.GameDataManager": [
+            "[1] WorldTypeSingleton",
+            "[7] PrefabCollectionTag",
+            "[0] RegisterPrefab,RegisterPrefabEvent",
+            "[0] GameDataSubSceneTag,WaitingForSceneLoad"
+        ],
+        "ProjectM.GameDataSubSceneSystem": [
+            "[0] HasRemovedSceneTags [S],GameDataSubSceneTag,ResolvedSectionEntity [B],WaitingForSceneLoad [S]"
+        ],
+        "ProjectM.GameDataSystem": [
+            "[0] RegisterManagedDataEvent",
+            "[0] RegisterPrefab",
+            "[0] ItemData,RegisterPrefabEvent",
+            "[0] ItemDataDropGroup,RegisterPrefabEvent",
+            "[0] DropTableData,RegisterPrefabEvent",
+            "[0] RecipeData,RegisterPrefabEvent",
+            "[14] Prefab,RefinementstationRecipesBuffer [B]",
+            "[19] Prefab,WorkstationRecipesBuffer [B]",
+            "[0] UpgradeData,RegisterPrefabEvent",
+            "[0] CastleClaimData,RegisterPrefabEvent",
+            "[0] CastleDestroyData,RegisterPrefabEvent",
+            "[0] BlueprintData,RegisterPrefabEvent",
+            "[0] StationBonusData,RegisterPrefabEvent",
+            "[0] RepairstationData,RegisterPrefabEvent",
+            "[0] Altarstation,RegisterPrefabEvent",
+            "[0] RegisterManagedDataEvent,RegisterPrefab,RegisterPrefabEvent"
+        ],
+        "ProjectM.Gameplay.CheckBadDestroyedSystem": [
+            "[0] EntityMetadata,EntitySpawnedMetadata [S]"
+        ],
+        "ProjectM.Gameplay.CheckBadDestroyTagsSystem_AddTag": [
+            "[0] DestroyTag"
+        ],
+        "ProjectM.Gameplay.CheckBadDestroyTagsSystem_Check_Client": [
+            "[0] DestroyTag"
+        ],
+        "ProjectM.Gameplay.CheckSpawnTagWithoutPrefabGuidSystem": [
+            "[0] Static [S],SpawnTag,PrefabGUID [S]"
+        ],
+        "ProjectM.Gameplay.Clan.ClanSystem_Client": [
+            "[0] ClanInvitationResult",
+            "[0] ClanInvitationResponse",
+            "[0] LeaveClanResultResponse",
+            "[0] AcceptClanInviteResultResponse"
+        ],
+        "ProjectM.Gameplay.Clan.ClanSystem_InviteReceived_Client": [
+            "[0] ClanInviteRequest,SpawnTag"
+        ],
+        "ProjectM.Gameplay.DashSystem": [
+            "[0] Dash,LifeTime,Buff,Age"
+        ],
+        "ProjectM.Gameplay.EntityMetadataSystem": [
+            "[13] DisabledWaitingForTransform [S],SceneTag [S],SpawnTag,PrefabGUID",
+            "[0] DisabledWaitingForTransform [S],SceneTag,SpawnTag,PrefabGUID"
+        ],
+        "ProjectM.Gameplay.LowBloodSequenceSystem": [
+            "[1] Translation,Rotation,Blood,LocalControlled"
+        ],
+        "ProjectM.Gameplay.LowHealthSequenceSystem": [
+            "[1] Translation,Health,Rotation,LowHealthEffect,LocalControlled"
+        ],
+        "ProjectM.Gameplay.RemoveMetadataEntitySystem": [
+            "[0] DestroyTag,EntityMetadata"
+        ],
+        "ProjectM.Gameplay.Scripting.RadialZoneSystem_Client": [
+            "[1] Translation,LocalCharacter,CanFly",
+            "[0] LocalToWorld,RadialZone_Sequence"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewDashSystem": [
+            "[0] EntityOwner,AimPreviewDash,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewMeleeSystem": [
+            "[0] AimPreviewMelee,EntityOwner,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewProjectileCursorSystem": [
+            "[0] EntityOwner,AimPreviewProjectileCursor,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewProjectileSystem": [
+            "[0] AimPreviewProjectile,EntityOwner,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewTargetAoeSystem": [
+            "[0] AimPreviewTargetAoE,EntityOwner,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.AimPreviewTravelBuffSystem": [
+            "[0] EntityOwner,AimPreviewTravelBuff,AimPreview"
+        ],
+        "ProjectM.Gameplay.Systems.BuffAimPreviewDestroySystem": [
+            "[0] BuffAimPreview,DestroyTag,EntityOwner"
+        ],
+        "ProjectM.Gameplay.Systems.BuffAimPreviewSpawnSystem": [
+            "[0] BuffAimPreview,SpawnTag"
+        ],
+        "ProjectM.Gameplay.Systems.CombatMusicSystem_Client": [
+            "[1] CombatMusicListener_Shared,LocalCharacter,CombatMusicListener_Client"
+        ],
+        "ProjectM.Gameplay.Systems.DayNightCycleMoodSystem": [
+            "[1] LocalUser",
+            "[1] DayNightCycle"
+        ],
+        "ProjectM.Gameplay.Systems.DoorSystem_Client": [
+            "[23] Door",
+            "[1] ServerTime"
+        ],
+        "ProjectM.Gameplay.Systems.HideWeaponSystem": [
+            "[60] HideWeapon",
+            "[1] ServerTime"
+        ],
+        "ProjectM.Gameplay.Systems.HideWeaponSystem_Destroy": [
+            "[0] HideWeapon,DestroyTag"
+        ],
+        "ProjectM.Gameplay.Systems.InteractSystemClient": [
+            "[1] Translation,Interactor,EntityAimData,AbilityBar_Client,LocalControlled"
+        ],
+        "ProjectM.Gameplay.Systems.InteractSystemClient_Sequences": [
+            "[1] InteractableSequence,InteractableActive",
+            "[0] InteractableSequence,InteractableWasActive",
+            "[1] SpellTarget",
+            "[1] InteractableActive,Interactable"
+        ],
+        "ProjectM.Gameplay.Systems.PlaySequenceOnDestroySystem": [
+            "[0] PlaySequenceOnDestroy [B],DestroyTag"
+        ],
+        "ProjectM.Gameplay.Systems.RespawnDelaySystem_Client": [
+            "[0] RespawnDelay,LifeTime,Buff,SpellTarget,Age"
+        ],
+        "ProjectM.GameplayInputSystem": [
+            "[1] Translation,CameraUser,KeyboardInput,Controller",
+            "[1] LocalCharacter",
+            "[0] ClientReplayPlayerEnabled",
+            "[0] ResetMovementCameraDirection",
+            "[0] DisableSendAimInput"
+        ],
+        "ProjectM.GiveInventoryItemCommandSystem": [
+            "[1] LocalUser,User"
+        ],
+        "ProjectM.GlobalCritterSpawnManager": [
+            "[5] CritterGroup",
+            "[99] LocalToWorld,CritterSpawn",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.GlobalWorldVFXInstanceSystem": [
+            "[0] WorldVFXSpawnManagerIndex [S],WorldVFXSpawn",
+            "[0] Translation,WorldVFXSpawnManagerIndex,WorldVFXSpawn",
+            "[0] WorldVFXSpawnManagerIndex,WorldVFXSpawn [S]",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.HandleClientActionResponseSystem": [
+            "[1] UICanvasBase",
+            "[0] ClientActionResponseEvent"
+        ],
+        "ProjectM.HasResidentBuffDestroySystem_Shared": [
+            "[0] DestroyTag,HasResidentBuff,Buff",
+            "[1] Buff,SpellTarget,InsideBuff"
+        ],
+        "ProjectM.HeightCorrectionSystem_Client": [
+            "[8] Translation,Height",
+            "[7] SnapToHeight,Translation,Height",
+            "[0] Translation,CanFly [S],Height,FallToHeight",
+            "[1] Translation,CanFly,Height,FallToHeight"
+        ],
+        "ProjectM.Hybrid.ChestAimTargetWeightAnimationSystem": [
+            "[1] HybridModelPlayerTransformData,AnimatorLastState,HybridModelAnimationComponent"
+        ],
+        "ProjectM.Hybrid.CritterSystem": [
+            "[0] HybridCritterComponent,HybridModel",
+            "[0] LocalToWorld,Translation,CritterData,Rotation",
+            "[0] CritterData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.Hybrid.DetectGenderChangeSystem": [
+            "[1] CurrentGender,CustomizationFeatures"
+        ],
+        "ProjectM.Hybrid.GetAndSetHybridModelTransformSystem": [
+            "[36] HybridModelPlayerTransformData [S],Transform,HybridModel",
+            "[1] HybridModelPlayerTransformData,HybridModelAnimData,Transform,HybridModel",
+            "[37] HybridModelRendererComponent,HybridModel"
+        ],
+        "ProjectM.Hybrid.GetHybridModelAnimationSystem": [
+            "[37] HybridModel,AnimatorNewState",
+            "[37] AnimationLayerToAnimatorLayerBuffer [B],AnimatorPlayAnimationBuffer [B],AnimatorLastState,AnimatorNewState"
+        ],
+        "ProjectM.Hybrid.GetHybridModelLocomotionSystem": [
+            "[4] HybridModelLocomotionData,HybridModel",
+            "[0] UseCombatAnimationState,Buff",
+            "[463] Controller",
+            "[1] HybridModelStrafeLocomotionData,HybridModel"
+        ],
+        "ProjectM.Hybrid.HybridEquipmentSystem": [
+            "[1] HybridDefaultEquipment,HybridCurrentEquipment,HybridModel",
+            "[1] HybridCurrentCustomization,HybridModel",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.Hybrid.HybridModelSystem": [
+            "[4] Translation,HybridModelUser,Hideable",
+            "[4] Translation,HybridModelUser [S],UseHybridModel",
+            "[1] LocalUser",
+            "[1] LocalCharacter",
+            "[0] HybridModelUser,UseHybridModel [S]",
+            "[0] Disabled,HybridModelUser,UseHybridModel",
+            "[0] UpdateHybridModel,HybridModelUser",
+            "[37] HybridModelUser,UseHybridModel"
+        ],
+        "ProjectM.Hybrid.SetHybridModelAnimationSystem": [
+            "[37] AnimatorPlayAnimationBuffer [B],HybridModelAnimationComponent"
+        ],
+        "ProjectM.Hybrid.SetHybridModelLocomotionStrafeSystem": [
+            "[1] HybridModelLocomotionComponent,HybridModelStrafeLocomotionData"
+        ],
+        "ProjectM.Hybrid.SetHybridModelLocomotionSystem": [
+            "[4] HybridModelLocomotionComponent,HybridModelLocomotionData"
+        ],
+        "ProjectM.Hybrid.SetHybridModelWeaponAnimationSystem": [
+            "[1] HybridModelWeaponAnimationComponent,HybridCurrentEquipment,HybridModel"
+        ],
+        "ProjectM.HybridCameraSystem": [
+            "[1] HybridCamera,HybridCameraInstancedTag",
+            "[0] HybridCamera,HybridCameraInstancedTag [S]",
+            "[0] ScreenShake,LifeTime,Age",
+            "[1] Translation,HybridCamera,Rotation",
+            "[1] HybridCameraFrustumPlanes [B],HybridCamera,HybridCameraData",
+            "[1] HybridCamera,CameraTarget",
+            "[1] CameraTarget,HybridCameraData",
+            "[1] HybridCameraData"
+        ],
+        "ProjectM.InitialUnlockedProgressionSystem": [
+            "[0] UnlockProgressionServerEvent",
+            "[0] InitialUnlockedProgressionEvent"
+        ],
+        "ProjectM.InsideBuildingsSystem": [
+            "[1] Buff,SpellTarget,InsideBuff",
+            "[1] Resident",
+            "[1] Buff,InsideBuff"
+        ],
+        "ProjectM.InstantiateNewMapIconsSystem": [
+            "[1] Translation,LocalUser,User",
+            "[0] MapIconPerUserData [B],Translation,AttachMapIconsToEntity [B],MapIcon_Client"
+        ],
+        "ProjectM.InteractSystemHUD": [
+            "[1] ChunkWaypoint",
+            "[0] NetworkId,EntityOwner,GoToHUDMenu,SpellTarget",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.JointConversionFinalizationSystem": [
+            "[0] Prefab,LinkToJointOwner,PhysicsJoint"
+        ],
+        "ProjectM.JumpFromCliffsHUDCheckSystem": [
+            "[1] Translation,LocalCharacter",
+            "[1] LocalCharacter,JumpFromCliffs"
+        ],
+        "ProjectM.JumpFromCliffsTravelDestroySystem": [
+            "[0] JumpFromCliffsTravelBuff,DestroyTag,Buff"
+        ],
+        "ProjectM.JumpFromCliffsTravelSpawnSystem": [
+            "[0] JumpFromCliffsTravelBuff,Buff,SpawnTag"
+        ],
+        "ProjectM.JumpFromCliffsTravelSystem": [
+            "[0] JumpFromCliffsTravelBuff,LifeTime,Buff,Age"
+        ],
+        "ProjectM.KickBanSystem_Client": [
+            "[0] BannedEvent_Reponse"
+        ],
+        "ProjectM.KillSystemClient": [
+            "[588] Dead [S],HealthConstants,Health",
+            "[0] Dead,Health"
+        ],
+        "ProjectM.LocalUserSystem": [
+            "[1] ClientNetworkState",
+            "[0] CameraRequest",
+            "[1] LocalUser",
+            "[0] SetLocalUserIndexEvent",
+            "[463] User",
+            "[0] CameraRequest,SetLocalUserIndexEvent",
+            "[1] GameDataInitializedSingleton"
+        ],
+        "ProjectM.MapCollisionSystem": [
+            "[1] PlayerCharacter,Translation,MapCollision,LastTranslation",
+            "[7] PlayerCharacter [S],Translation,MapCollision,LastTranslation"
+        ],
+        "ProjectM.MenuInputSystem": [
+            "[1] LocalUser"
+        ],
+        "ProjectM.MipMapLevelSystem": [
+            "[20308] RenderMesh"
+        ],
+        "ProjectM.MountBuffDestroySystem_Shared": [
+            "[0] MountBuff,DestroyTag,Buff,SpellTarget",
+            "[0] MountBuff,DestroyTag,Buff"
+        ],
+        "ProjectM.MountBuffSpawnSystem_Client": [
+            "[0] MountBuff,Buff,SpawnTag,SpellTarget"
+        ],
+        "ProjectM.MountSystem_Shared": [
+            "[0] MountBuff,Buff,SpellTarget",
+            "[1] Mounter"
+        ],
+        "ProjectM.MouseWorldPositionSystem": [
+            "[1] CameraUser,Controller"
+        ],
+        "ProjectM.MoveEntitySystem": [
+            "[7] EntityInput,ControlledBy [S],Translation,Velocity,MoveVelocity,Rotation,NetworkInterpolated_Shared,Movement,MoveEntity"
+        ],
+        "ProjectM.MoveTowardsRotationSystem_Shared": [
+            "[0] Rotation,MoveTowardsRotationBuff,Buff"
+        ],
+        "ProjectM.Network.CleanUpWeakRefsSystem": [
+            "[0] NetworkId,DestroyTag,NetworkSnapshot"
+        ],
+        "ProjectM.Network.CommandUtility+InputCommandAbilityStateHistorySystem_Client": [
+            "[1] LocalUser,IsConnected,Controller,InputCommandStateHistoryBufferElement [B]"
+        ],
+        "ProjectM.Network.CommandUtility+InputCommandStateHistorySystem_Client": [
+            "[1] LocalUser,IsConnected,Controller,InputCommandStateHistoryBufferElement [B]"
+        ],
+        "ProjectM.Network.CommandUtility+RemoveOldInputCommands": [
+            "[1] LocalUser,InputCommandBufferElement [B],InputCommandDataProxy",
+            "[1] ClientNetworkState"
+        ],
+        "ProjectM.Network.CommandUtility+TileCollisionHistorySystem_Base": [
+            "[1] TileGameplayHeightsHistoryElement [B],Translation,TileCollisionHistoryElement [B],LocalUser,TileDisabledCollisionHistoryElement [B],IsConnected,InputCommandDataProxy,TileCollisionHistoryMetadataElement [B],Controller"
+        ],
+        "ProjectM.Network.NetworkInterpolationSystem_Client": [
+            "[8] EntityInput,Translation,Velocity,NetworkInterpolated_Client,DestroyTag [S],Rotation,NetworkInterpolated_Shared,LastTranslation",
+            "[0] DisableNetworkInterpolation"
+        ],
+        "ProjectM.Network.NetworkInterpolationSystemSpawn_Client": [
+            "[0] EntityInput,Translation,Velocity,NetworkInterpolated_Client,MoveVelocity,Rotation,NetworkInterpolated_Shared,LastTranslation,SpawnTag"
+        ],
+        "ProjectM.Network.PlayCommandsSystem_Client": [
+            "[1] LocalUser,InputCommandBufferElement [B],InputCommandDataProxy,Controller"
+        ],
+        "ProjectM.Network.ReceivePacketSystem": [
+            "[1] ClientNetworkState",
+            "[0] ReceivedPacket,ReceivedPacketBuffer [B]"
+        ],
+        "ProjectM.Network.ReturnNetworkIdSystemClient": [
+            "[0] NetworkId,DestroyTag"
+        ],
+        "ProjectM.Network.SerializeAndSendClientEventsSystem": [
+            "[0] SendNetworkEventTag"
+        ],
+        "ProjectM.Network.SerializeAndSendUserInputSystem": [
+            "[1] Team,Translation,LocalCharacter,CanFly",
+            "[1] LocalUser",
+            "[1] ClientNetworkState",
+            "[1] OutgoingNetBuffer [B],ClientNetworkState",
+            "[0] ClientReplayPlayerEnabled"
+        ],
+        "ProjectM.Network.ShowNetworkInterpolationSystem": [
+            "[7] NetworkInterpolated_Client,NetworkInterpolated_Shared,LocalControlled [S]",
+            "[0] ShowNetworkInterpolation"
+        ],
+        "ProjectM.Network.StartValueSnapshotsSystem": [
+            "[0] RegisterPrefab",
+            "[7213] Prefab,PrefabGUID,NetworkSnapshotType"
+        ],
+        "ProjectM.Network.TimeoutSystem": [
+            "[8] NetworkedTimeout"
+        ],
+        "ProjectM.Network.UserActivityGridSystem": [
+            "[0] Translation,ConnectedUser,InputCommandDataProxy,Controller",
+            "[1] Translation,LocalUser,User,Controller",
+            "[463] Translation,User"
+        ],
+        "ProjectM.OrbitCameraSystem": [
+            "[0] Translation,StudioListener,Rotation,CameraTarget,OrbitCameraState,OrbitCamera"
+        ],
+        "ProjectM.PathDebugSystem": [
+            "[0] PathSettings",
+            "[0] ShowWorldPathsEnabled"
+        ],
+        "ProjectM.PathRecorderSystem": [
+            "[1] Translation,PathRecorderEntry [B],PathRecorder",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.PerformanceLoggerSystem": [
+            "[1] LocalControlled",
+            "[1] DayNightCycle",
+            "[1] ServerDebugViewData"
+        ],
+        "ProjectM.Physics.PickingSystem": [
+            "[1] CameraUser",
+            "[1] Picker"
+        ],
+        "ProjectM.Physics.ShowPhysicsCollidersSystem_Impl": [
+            "[0] ShowPhysicsColliders"
+        ],
+        "ProjectM.Physics.ShowPickingSystem": [
+            "[1] Picker",
+            "[0] ShowPicking"
+        ],
+        "ProjectM.PlayerTeleportCommandSystem": [
+            "[1] LocalUser,User",
+            "[463] User",
+            "[1] NetworkId,Translation,ChunkWaypoint"
+        ],
+        "ProjectM.PlayMountedSequenceSystem": [
+            "[0] PlayMountedSequence,LifeTime,Rotation,EntityOwner"
+        ],
+        "ProjectM.PrefabCollectionSystem": [
+            "[0] PrefabCollectionBuffer [B],Initialized [S]",
+            "[0] EntityNameCollectionBuffer [B],Initialized [S]",
+            "[0] RegisterPrefab,RegisterPrefabEvent",
+            "[0] RegisterPrefabInheritance",
+            "[0] RegisterPrefab,SilentPrefabConversionTag [S],RegisterPrefabEvent",
+            "[0] PrefabCollectionBuffer [B],Initialized [S],SilentPrefabConversionTag [S]"
+        ],
+        "ProjectM.Presentation.AnimateFadeOutSystem": [
+            "[426] CanFadeOut",
+            "[1388] ShaderProperty_DitherAlpha,AnimateDitherAlpha"
+        ],
+        "ProjectM.Presentation.CalculateVisionSystem": [
+            "[1] LocalControlled"
+        ],
+        "ProjectM.Presentation.CloudCookieSystem": [
+            "[1] MoodManagerComponent",
+            "[4] LocalToWorld,CloudCookie,CloudLight [S]",
+            "[0] LocalToWorld,CloudCookie,CloudLight",
+            "[1] HybridCameraData",
+            "[1] DayNightCycle",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.Presentation.FadeOutObstaclesSystem": [
+            "[8] Dead [S],Translation,CheckOnScreen,FadeOutObstacles",
+            "[1] HybridCameraData",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.Presentation.FadeOutUpperRoomPartsSystem": [
+            "[1] Translation,LocalControlled"
+        ],
+        "ProjectM.Presentation.MoodSystem": [
+            "[26] LocalToWorld,MoodColliderSphere,MoodIndex",
+            "[2] LocalToWorld,MoodIndex,MoodColliderBox",
+            "[1] CameraTarget",
+            "[1] LocalControlled",
+            "[1] DayNightCycle",
+            "[0] MoodIndex [S],MoodAssetRef",
+            "[463] IndoorMusic"
+        ],
+        "ProjectM.Presentation.PhysicsRubbleSystem": [
+            "[0] PhysicsRubble"
+        ],
+        "ProjectM.Presentation.ProxyPrefabSystem": [
+            "[4] InstantiatedProxyPrefab [S],LocalToWorld,ProxyPrefab",
+            "[1] LocalUser",
+            "[0] InstantiatedProxyPrefab,ProxyPrefab [S]",
+            "[0] InstantiatedProxyPrefab,Disabled,ProxyPrefab",
+            "[0] InstantiatedProxyPrefab,LocalToWorld"
+        ],
+        "ProjectM.Presentation.TileLightAtlasSystem": [
+            "[0] TileLightResultBuffer [B]"
+        ],
+        "ProjectM.Presentation.TileLightSystem": [
+            "[0] LocalToWorld,TileLightCollisionBuffer [B]",
+            "[0] LocalToWorld,TileLightResultBuffer [B],TileLightCollisionBuffer [B]"
+        ],
+        "ProjectM.Presentation.VolumeCompanionSystem": [
+            "[0] LocalToWorld,VolumeCompanion,VolumeCompanionBoxCollider,VolumeCompanionInstantiated [S]",
+            "[0] LocalToWorld,VolumeCompanion,VolumeCompanionSphereCollider,VolumeCompanionInstantiated [S]",
+            "[0] VolumeCompanion,Disabled,VolumeCompanionInstantiated",
+            "[0] VolumeCompanion [S],VolumeCompanionInstantiated",
+            "[0] VolumeCompanion,VolumeCompanionInstantiated [S]"
+        ],
+        "ProjectM.Presentation.WallpaperSystem": [
+            "[115] WallpaperForceDamaged",
+            "[0] CastleHeartConnection [S],ChangeModelWhenDecaying,WallpaperForceDamaged",
+            "[115] CastleHeartConnection,Health,ChangeModelWhenDecaying,WallpaperForceDamaged",
+            "[0] LocalToWorld,WallpaperInstanceBuffer [B],Wallpaper_NotSplit,WallpaperStyles,WallpaperForceDamaged",
+            "[72] LocalToWorld,WallpaperInstanceBuffer [B],WallpaperStyles,WallpaperForceDamaged,Wallpaper_TwoSplits",
+            "[43] LocalToWorld,WallpaperInstanceBuffer [B],WallpaperStyles,Wallpaper_FourSplits,WallpaperForceDamaged",
+            "[0] WallpaperInstanceBuffer [B],Translation,Rotation,PreviewPlacementSequence",
+            "[1] ServerTime",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.PreviewPlacementBuffSystem": [
+            "[1] HybridCameraData",
+            "[0] PreviewPlacementBuff"
+        ],
+        "ProjectM.ProcessDestroyEventSystem": [
+            "[0] DestroyTagEvent"
+        ],
+        "ProjectM.ProgressionDependencySystem": [
+            "[0] RegisterPrefab"
+        ],
+        "ProjectM.ProjectileSystem": [
+            "[0] Translation,LastTranslation,ProjectileSnapToHeight,GetOwnerTranslationOnSpawn"
+        ],
+        "ProjectM.ProjectileSystem_Spawn_Client": [
+            "[0] Rotation,SpawnTag,SpellMovement"
+        ],
+        "ProjectM.RagdollDriverSystem_Destroy": [
+            "[4] HybridRagdollComponent",
+            "[0] RagdollDriver"
+        ],
+        "ProjectM.RagdollDriverSystem_WriteBones": [
+            "[0] RagdollBoneTransformElement [B],RagdollBoneEntityElement [B],RagdollDriver",
+            "[0] RagdollBoneTransformElement [B],RagdollDriver,HybridRagdollComponent"
+        ],
+        "ProjectM.RagdollifyBuffTargetSystem": [
+            "[0] RagdollifyBuffTarget,Buff"
+        ],
+        "ProjectM.RagdollifySystem_Cleanup": [
+            "[0] PhysicsCollider [S],RagdollPhysicsColliderState"
+        ],
+        "ProjectM.RagdollifySystem_Setup": [
+            "[0] RagdollDriver,SpawnTag,RagdollCreateData",
+            "[0] RagdollBoneEntityElement [B]"
+        ],
+        "ProjectM.RagdollifySystem_Spawn": [
+            "[0] HybridModelUser,RagdollDriven"
+        ],
+        "ProjectM.ReactToCharacterSpawned_Client": [
+            "[0] CharacterHasRespawnedEvent",
+            "[1] TopdownCameraState"
+        ],
+        "ProjectM.ReplaceMapIconNamesByChunkSystem": [
+            "[0] Translation,MapIconData,SpawnTag"
+        ],
+        "ProjectM.Replays.ClientReplayPlayerSystem": [
+            "[0] ClientReplayPlayerEnabled",
+            "[1] LocalUser",
+            "[0] ReplayJumpToSnapshotEvent"
+        ],
+        "ProjectM.Replays.ClientReplayRecorderSystem": [
+            "[1] HailMessage,HailMessageBuffer [B]",
+            "[0] ReplayStoreSnapshotEventBuffer [B],ReplayStoreSnapshotEvent,ReplayScreenshotBuffer [B]",
+            "[1] LocalUser",
+            "[0] ReceivedPacket,ReceivedPacketBuffer [B]",
+            "[0] ClientReplayRecorderEnabled"
+        ],
+        "ProjectM.Replays.SerializeReplaySnapshotSystem": [
+            "[0] ReplayCreateSnapshotEvent",
+            "[0] ClientReplayRecorderEnabled"
+        ],
+        "ProjectM.ResetBuffAgeEventSystem_Client": [
+            "[0] ResetBuffAgeServerEvent"
+        ],
+        "ProjectM.ResetMapCollisionResultSystem": [
+            "[8] MapCollision"
+        ],
+        "ProjectM.RotateAroundAxisSystem": [
+            "[6] LocalToWorld,RotateAroundAxis"
+        ],
+        "ProjectM.RotateTowardsTargetDirection_Server": [
+            "[7] EntityInput,Dead [S],Translation,Rotation,NetworkInterpolated_Shared,EntityAimData,TargetDirection,MoveEntity",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.RuntimeConversionSystem": [
+            "[1] WorldTypeSingleton",
+            "[0] ServerRuntimeSettings"
+        ],
+        "ProjectM.SalvageSystem_Client": [
+            "[0] ServerSalvageEventSucceeded"
+        ],
+        "ProjectM.SceneLoadSystem": [
+            "[0] WaitForTargetSceneLoad"
+        ],
+        "ProjectM.Scripting.ClientScriptMapper": [
+            "[0] DebugShowPhysicsCasts"
+        ],
+        "ProjectM.Scripting.ClientScriptRegisterSystem": [
+            "[0] Prefab,HashedTypesBuffer [B],PrefabGUID"
+        ],
+        "ProjectM.Scripting.ScriptDestroyClient": [
+            "[0] ScriptDestroy,DestroyTag,PrefabGUID"
+        ],
+        "ProjectM.Scripting.ScriptSpawnClient": [
+            "[0] SpawnTag,PrefabGUID,ScriptSpawn"
+        ],
+        "ProjectM.Scripting.ScriptUpdateClient": [
+            "[7] ScriptUpdate,PrefabGUID"
+        ],
+        "ProjectM.Sequencer.BuffSequenceSystem": [
+            "[5] BuffSequence [B],BuffSequenceSpawned [B],EntityOwner,Buff"
+        ],
+        "ProjectM.Sequencer.BuffSequenceSystem_Destroy": [
+            "[0] BuffSequenceSpawned [B],DestroyTag"
+        ],
+        "ProjectM.Sequencer.BuffSequenceSystem_Spawn": [
+            "[5] BuffSequence [B],Buff"
+        ],
+        "ProjectM.Sequencer.ChunkWaypointSequenceSystem": [
+            "[0] Translation,Rotation,ChunkWaypointSequence",
+            "[1] LocalUser",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.Sequencer.CreateSequenceSystem": [
+            "[0] DefaultBlackboardValueElement [B],CreateSequence,BlackboardElement [B],SequenceInput",
+            "[0] CreateSequence,SequenceAsset"
+        ],
+        "ProjectM.Sequencer.CreateSequenceSystem_Deserialize": [
+            "[0] DefaultBlackboardValueElement [B],CreateSequence,BlackboardElement [B],SequenceInput",
+            "[0] CreateSequence,SequenceAsset"
+        ],
+        "ProjectM.Sequencer.Debugging.SequenceDebuggerSystem": [
+            "[42] SequencerDebugHistoryInfo [S],SequenceInput,SequenceAsset",
+            "[0] SequenceInstance,SequencerDebugHistoryInfo,EventStateElement [B],SequencerBlackboardHistory [B],SequenceAsset,SequencerStateHistory [B]",
+            "[0] DebugSequencesSingleton"
+        ],
+        "ProjectM.Sequencer.EntitySequenceSystem": [
+            "[1] EntitySequence [B]"
+        ],
+        "ProjectM.Sequencer.EntitySequenceSystem_Spawn": [
+            "[0] SpawnEntitySequence [B],EntitySequence [B],SpawnTag"
+        ],
+        "ProjectM.Sequencer.ParticleLifetimeSystem": [
+            "[0] Translation,InstantiateParticleSystem",
+            "[7] ParticleSettings,Translation,SequencerParticle,Rotation,NonUniformScale",
+            "[2] VisualEffectParameterElement [B],HybridVisualEffects",
+            "[0] LineRendererPositionElement [B],HybridLineRenderers",
+            "[1] LocalUser"
+        ],
+        "ProjectM.Sequencer.PresentationGraphSystem_Update": [
+            "[1] LocalControlled",
+            "[1] CameraTarget",
+            "[42] GraphProgramElement [B],GraphEvent [B],EventStateElement [B],BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.Pull_BuffTargetSystem": [
+            "[0] BlackboardElement [B],Pull_BuffTarget"
+        ],
+        "ProjectM.Sequencer.Pull_EntitySystem": [
+            "[42] SequenceInstance,BlackboardElement [B],Pull_Entity"
+        ],
+        "ProjectM.Sequencer.Pull_InputSystem": [
+            "[0] Pull_Input,BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.Pull_PositionSystem": [
+            "[0] Pull_Position,Translation,BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.Pull_RotationSystem": [
+            "[0] Rotation,BlackboardElement [B],Pull_Rotation"
+        ],
+        "ProjectM.Sequencer.Pull_TeamSystem": [
+            "[0] Pull_Team,BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.SequenceDestroyerSystem": [
+            "[42] SequenceInstance"
+        ],
+        "ProjectM.Sequencer.SetupGraphSystem_Deactivate": [
+            "[0] RunSetupGraphTag"
+        ],
+        "ProjectM.Sequencer.SetupGraphSystem_Update": [
+            "[1] LocalControlled",
+            "[1] CameraTarget",
+            "[0] RunSetupGraphTag,GraphProgramElement [B],GraphEvent [B],EventStateElement [B],BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.SimulationGraphSystem_Update": [
+            "[1] LocalControlled",
+            "[1] CameraTarget",
+            "[42] GraphProgramElement [B],GraphEvent [B],EventStateElement [B],BlackboardElement [B]"
+        ],
+        "ProjectM.Sequencer.SpawnSequenceForEntitySystem": [
+            "[0] Translation,Rotation,SpawnSequenceForEntity,SpawnTag"
+        ],
+        "ProjectM.Sequencer.UpdateFlowEventsSystem": [
+            "[42] SequenceInstance,EventStateElement [B],BlackboardElement [B],SequenceAsset",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.Sequencer.UpdatePostGraphSystem": [
+            "[42] SequenceInstance,EventStateElement [B],BlackboardElement [B],SequenceAsset",
+            "[1] HybridCameraData",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.Sequencer.UpdatePresentationPostGraphSystem": [
+            "[42] SequenceInstance,EventStateElement [B],BlackboardElement [B],SequenceAsset",
+            "[1] HybridCameraData",
+            "[1] LocalCharacter",
+            "[1] CameraTarget"
+        ],
+        "ProjectM.ServantCoffinstationSequenceSystem": [
+            "[5] Translation,ServantCoffinEffects,Rotation,ServantCoffinstation"
+        ],
+        "ProjectM.ServerTimeSystem_Client": [
+            "[1] ServerTime"
+        ],
+        "ProjectM.SetCurrentMapZoneSystem_Client": [
+            "[463] Translation,UserMapZoneElement [B],CurrentMapZone",
+            "[1] LocalUser"
+        ],
+        "ProjectM.SetupPrefabSetsSystem": [
+            "[33] PrefabSetSourceObjectBuffer [B],PrefabSetBuffer [B]",
+            "[0] RegisterPrefabEvent"
+        ],
+        "ProjectM.SetupServerSettings": [
+            "[0] RegisterPrefab",
+            "[1] ServerGameBalanceSettings"
+        ],
+        "ProjectM.Shared.Systems.BumpOnTileModelChangeSystem": [
+            "[0] TileModel"
+        ],
+        "ProjectM.Shared.Systems.CastleAnnouncementSystem_Client": [
+            "[0] CastleWallBreachedEvent",
+            "[0] NewSiegeWeapon",
+            "[0] CastleAttackedEvent"
+        ],
+        "ProjectM.Shared.Systems.ClientPerformanceChatSystem": [
+            "[1] GameDataInitializedSingleton"
+        ],
+        "ProjectM.Shared.Systems.DeserializeStaticTransformSystem": [
+            "[0] DisabledWaitingForTransform,Translation,StaticTransformCompatible,Rotation",
+            "[0] TerrainChunkLoadedEvent",
+            "[0] LocalToWorld,TilePosition,Translation,TileBounds,StaticTransformCompatible,TileData,Rotation,DisabledWaitingForSync [S]"
+        ],
+        "ProjectM.Shared.Systems.DestroySequenceWhenSelfIsDestroyedSystem": [
+            "[0] DestroySequenceWhenSelfIsDestroyed [B],DestroyTag"
+        ],
+        "ProjectM.Shared.Systems.DestroyWhenSequenceIsDestroyedSystem": [
+            "[0] DestroyWhenSequenceIsDestroyed"
+        ],
+        "ProjectM.Shared.Systems.LogEntityDestroySystem": [
+            "[0] DestroyTag",
+            "[0] LogEntitySpawnDestroy"
+        ],
+        "ProjectM.Shared.Systems.LogEntitySpawnNetworkSystem": [
+            "[0] SpawnTag",
+            "[0] LogEntitySpawnDestroy"
+        ],
+        "ProjectM.Shared.Systems.LogEntitySpawnSystem": [
+            "[0] SpawnTag",
+            "[0] LogEntitySpawnDestroy"
+        ],
+        "ProjectM.Shared.Systems.PvPToggleChatSystem": [
+            "[0] PvPToggleEvent"
+        ],
+        "ProjectM.Shared.Systems.RegisterPrefabEventsCleanupSystem": [
+            "[0] RegisterPrefabEvent",
+            "[0] RegisterPrefabInheritance",
+            "[0] NewPrefabsRegisteredEvent"
+        ],
+        "ProjectM.Shared.Systems.ServantMissionSystem_Client": [
+            "[0] ServantMissionFinishedEvent",
+            "[0] ServantMissionStartedEvent"
+        ],
+        "ProjectM.Shared.Systems.ServerIsRestartingEventSystem": [
+            "[0] ServerIsRestartingServerEvent"
+        ],
+        "ProjectM.ShowAiLineOfSightSystem": [
+            "[0] GridIsActive [S],ShowAiLineOfSight",
+            "[0] GridIsActive,ShowAiLineOfSight [S]",
+            "[0] Translation,DrawGrid,DrawGridBuffer [B],ShowAiLineOfSight"
+        ],
+        "ProjectM.ShowAiLineOfSightTileSystem": [
+            "[0] ShowAiLineOfSightTiles,GridIsActive [S]",
+            "[0] ShowAiLineOfSightTiles [S],GridIsActive",
+            "[0] ShowAiLineOfSightTiles,Translation,DrawGrid,DrawGridBuffer [B]"
+        ],
+        "ProjectM.ShowAimSystem_Client": [
+            "[9] Translation,Rotation,EntityAimData,TargetDirection",
+            "[0] ShowAim"
+        ],
+        "ProjectM.ShowBuildGridSystem": [
+            "[0] EditableTileModel,IsEditingTileModel",
+            "[0] DrawGrid [S],ShowBuildGrid",
+            "[0] ShowBuildGridActive,DrawGrid,ShowBuildGrid [S]",
+            "[0] ShowBuildGridActive,DrawGrid,ShowBuildGrid",
+            "[0] IsPreviewingPlacement,PreviewBuildingPlacement"
+        ],
+        "ProjectM.ShowCommandBufferStatsSystem_Client": [
+            "[463] InputCommandBufferElement [B],InputCommandDataProxy",
+            "[0] ShowCommandBufferStats"
+        ],
+        "ProjectM.ShowLineOfSightSystem": [
+            "[1] LocalControlled",
+            "[0] GridIsActive [S],ShowLineOfSight",
+            "[0] GridIsActive,ShowLineOfSight [S]",
+            "[0] Translation,DrawGrid,DrawGridBuffer [B],ShowLineOfSight"
+        ],
+        "ProjectM.ShowLineOfSightTileSystem": [
+            "[0] GridIsActive [S],ShowLineOfSightTiles",
+            "[0] GridIsActive,ShowLineOfSightTiles [S]",
+            "[0] Translation,DrawGrid,ShowLineOfSightTiles,DrawGridBuffer [B]"
+        ],
+        "ProjectM.ShowPathfindingTilesSystem": [
+            "[0] ShowPathfindingTiles,GridIsActive [S]",
+            "[0] ShowPathfindingTiles [S],GridIsActive",
+            "[0] Translation,ShowPathfindingTiles,DrawGrid,DrawGridBuffer [B]"
+        ],
+        "ProjectM.ShowTileCollisionHistorySystem_Client": [
+            "[0] DrawGrid,TileCollisionHistoryElement [B],ShowTileCollisionHistory,TileCollisionHistoryMetadataElement [B]",
+            "[0] ShowTileCollisionHistoryActive [S],ShowTileCollisionHistory",
+            "[0] ShowTileCollisionHistoryActive,ShowTileCollisionHistory [S]"
+        ],
+        "ProjectM.ShowTileCollisionSystem": [
+            "[0] ShowTileCollision,GridIsActive [S]",
+            "[0] ShowTileCollision [S],GridIsActive",
+            "[0] ShowTileCollision,Translation,DrawGrid,DrawGridBuffer [B]"
+        ],
+        "ProjectM.ShowTilePlacementSystem": [
+            "[0] GridIsActive [S],ShowTilePlacement",
+            "[0] GridIsActive,ShowTilePlacement [S]",
+            "[0] Translation,DrawGrid,DrawGridBuffer [B],ShowTilePlacement"
+        ],
+        "ProjectM.ShowTranslationsSystem_Client": [
+            "[6973] LocalToWorld,TopdownCamera [S],Translation",
+            "[10710] TopdownCamera [S],Translation",
+            "[0] ShowTranslations"
+        ],
+        "ProjectM.SpawnGroup": [
+            "[0] DisabledWaitingForTransform [S],SpawnTag,DisabledWaitingForSync [S]",
+            "[0] SpawnTag,DisabledDueToNoPlayersInRange"
+        ],
+        "ProjectM.SpawnPhysicsObjectOnDeathSystem": [
+            "[0] SpawnPhysicsObjectOnDeath,LocalToWorld,DestroyTag"
+        ],
+        "ProjectM.SpawnSleepingBuffSystem_Client": [
+            "[1] SpawnSleepingBuff,Buff"
+        ],
+        "ProjectM.SpellMovementSystem_Spawn": [
+            "[0] Translation,LifeTime,Rotation,SpawnTag,Age,SpellMovement"
+        ],
+        "ProjectM.SpellMovementSystem_Update": [
+            "[0] Translation,LifeTime,Rotation,Age,SpellMovement"
+        ],
+        "ProjectM.StaticHierarchySystem": [
+            "[316] LocalToWorld,StaticHierarchyData,StaticHierarchyBuffer [B]"
+        ],
+        "ProjectM.SunSystem": [
+            "[1] Sun",
+            "[1] DayNightCycle"
+        ],
+        "ProjectM.TakeDamageInSunDestroySystem": [
+            "[0] SunDamageDebuff,DestroyTag",
+            "[0] TakeDamageInSun,DestroyTag"
+        ],
+        "ProjectM.TakeDamageInSunSystem": [
+            "[1] Translation,TakeDamageInSun,Rotation,TakeDamageInSunDebuffState",
+            "[0] SunDamageDebuff,Translation,Rotation,Buff",
+            "[1] Sun",
+            "[1] SyncedServerDebugSettings",
+            "[0] LogEntitySpawnDestroy"
+        ],
+        "ProjectM.TargetAoE_DestroySystem": [
+            "[0] TargetAOESequence [B],TargetAoE,DestroyTag,LifeTime,Rotation,Age"
+        ],
+        "ProjectM.TargetAOESequenceSystem": [
+            "[0] Translation,TargetAOESequence [B],TargetAoE,LifeTime,Rotation,EntityOwner,Age"
+        ],
+        "ProjectM.TeleportBuffSystem_Client": [
+            "[0] TeleportBuff,FadeToBlack_Manual,Buff,Age",
+            "[0] TeleportBuff,FadeToBlack_Manual [S],Buff"
+        ],
+        "ProjectM.Terrain.ChunkMapZoneSpawnOnLoad": [
+            "[0] TerrainChunkMetadataLoadedEvent",
+            "[1] WorldAssetSingleton"
+        ],
+        "ProjectM.Terrain.CombinedFluffRenderingSystem": [
+            "[0] BatchedFluffUploaded,FluffRenderer [S]",
+            "[0] BatchedFluffUploaded,ReuploadBatchedFluffEvent,RenderBounds",
+            "[0] BatchedFluffUploaded,DisableRendering,RenderBounds",
+            "[0] BatchedFluffUploaded [S],FluffRenderer,DisableRendering [S],RenderMesh,RenderBounds",
+            "[0] BatchedFluffUploaded,BatchedRenderingData,BatchedFluffBatchData,BatchedFluffVisibilities [B]"
+        ],
+        "ProjectM.Terrain.FluffDisableSystem": [
+            "[3688] FluffRenderer",
+            "[0] DisableFluffSingleton,BatchedFluffDisabledComponent [S]",
+            "[0] DisableFluffSingleton [S],BatchedFluffDisabledComponent"
+        ],
+        "ProjectM.Terrain.FluffDisableUpdateSystem": [
+            "[0] DisableFluffSingleton",
+            "[3688] FluffRenderer,DisableRendering [S]"
+        ],
+        "ProjectM.Terrain.HideScenerySystem": [
+            "[56] LocalToWorld,SceneryObjectBlocker",
+            "[1] ChunkWorldRenderBounds,DisableRendering,HideableSceneryObject,WorldRenderBounds",
+            "[3013] ChunkWorldRenderBounds,DisableRendering [S],HideableSceneryObject,WorldRenderBounds"
+        ],
+        "ProjectM.Terrain.MapZoneDebugSystem": [
+            "[160] MapZonePolygonVertexElement [B],MapZoneData",
+            "[0] MapZoneDebugEnabled",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.Terrain.SetupSurfaceSystem": [
+            "[0] TerrainChunkLoadedEvent"
+        ],
+        "ProjectM.Terrain.ShowControlledAreaIdGridSystem": [
+            "[0] GridIsActive [S],ShowControllableAreaGrid",
+            "[0] GridIsActive,ShowControllableAreaGrid [S]",
+            "[0] Translation,DrawGrid,DrawGridBuffer [B],ShowControllableAreaGrid"
+        ],
+        "ProjectM.Terrain.ShowSurfaceDebugGridSystem": [
+            "[0] ShowSurfaceTypeGrid,GridIsActive [S]",
+            "[0] ShowSurfaceTypeGrid [S],GridIsActive",
+            "[0] ShowSurfaceTypeGrid,Translation,DrawGrid,DrawGridBuffer [B]"
+        ],
+        "ProjectM.Terrain.ShowSurfaceFluffSystem": [
+            "[0] GridIsActive [S],ShowSurfaceFluffDebug",
+            "[0] GridIsActive,ShowSurfaceFluffDebug [S]",
+            "[0] Translation,DrawGrid,ShowSurfaceFluffDebug,DrawGridBuffer [B]"
+        ],
+        "ProjectM.Terrain.ShowTileHeightsSystem": [
+            "[0] GridIsActive [S],ShowTileHeightsDebug",
+            "[0] GridIsActive,ShowTileHeightsDebug [S]",
+            "[0] Translation,DrawGrid,DrawGridBuffer [B],ShowTileHeightsDebug"
+        ],
+        "ProjectM.Terrain.SurfaceFluffAllowanceSystem": [
+            "[4] TerrainChunk,SurfaceFluffAllowance [B]",
+            "[221] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],DestroyTag [S],TileSurfaceFluffTag,DisabledDueToTimeout [S]"
+        ],
+        "ProjectM.Terrain.SurfaceFluffFilteringSystem": [
+            "[3688] FluffRenderer",
+            "[0] DisableFluffSingleton"
+        ],
+        "ProjectM.Terrain.SurfaceTypeUpdateSystem": [
+            "[0] RecalculateSurfaceTypesEvent"
+        ],
+        "ProjectM.Terrain.TerrainManager": [
+            "[0] TerrainChunkMetadataLoadedEvent,TerrainChunkLoadedEvent",
+            "[0] ProcessedMetadataTag [S],TerrainChunkMetadata",
+            "[0] ProcessedMetadataTag,StartedLoadingTag,TerrainChunkMetadata,LoadedMetadataTag [S]",
+            "[0] RegisteredLoadedTerrainChunk [S],ChunkSceneId,TerrainTag",
+            "[0] AdditionalChunkScene,RegisteredAdditionalScene [S]",
+            "[0] AdditionalChunkScene [S],RegisteredAdditionalScene",
+            "[0] RegisteredLoadedTerrainChunk,ChunkSceneId [S],TerrainTag [S]"
+        ],
+        "ProjectM.Terrain.UpdateSurfaceTextureSystem": [
+            "[4] TerrainChunk,TerrainTag",
+            "[1] CameraUser",
+            "[0] RecalculateSurfaceColorsEvent"
+        ],
+        "ProjectM.Terrain.UpdateUserWorldRegionSystem": [
+            "[6] WorldRegionPolygon,WorldRegionPolygonVertex [B]",
+            "[1] Translation,LocalUser,User,CurrentWorldRegion,IsConnected"
+        ],
+        "ProjectM.Terrain.WorldInitializationSystem": [
+            "[1] WorldAssetSingleton",
+            "[1] WorldConfigSingleton",
+            "[0] WorldConfigSingleton,Initialized [S]"
+        ],
+        "ProjectM.Terrain.WorldLoadingManagerSystem": [
+            "[0] Buff,TravelBuff",
+            "[0] TeleportBuff,Buff",
+            "[463] User,Controller",
+            "[0] Translation,SpawnCharacter",
+            "[201] ProcessedMetadataTag,TerrainChunkMetadata",
+            "[4] SceneTag [S],LoadTerrainChunkRequest",
+            "[0] Translation,ChunkPortal",
+            "[1] LocalUser",
+            "[1] CameraTarget",
+            "[1] GameDataInitializedSingleton"
+        ],
+        "ProjectM.Terrain.WorldLoadStartupTracker": [
+            "[1] WorldTypeSingleton",
+            "[166] RequestSceneLoaded",
+            "[1] GameDataInitializedSingleton"
+        ],
+        "ProjectM.TileModelSetRegisteredState": [
+            "[0] DisabledWaitingForTransform [S],DisabledTileModel [S],DestroyTag [S],TileModelRegistrationState,DisabledDueToTimeout [S]",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,DestroyTag,TileModelRegistrationState,DisabledDueToTimeout",
+            "[0] CustomDirtyTileBoundsEvent"
+        ],
+        "ProjectM.Tiles.TileModelSpatialLookupMap": [
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],DestroyTag [S],TileModelRegistrationState,TileModelSpatialData,DisabledDueToTimeout [S],TileModel",
+            "[0] DisabledWaitingForTransform [S],TilePosition,DisabledTileModel [S],DestroyTag [S],TileData,TileModelRegistrationState,TileModelSpatialData,DisabledDueToTimeout [S],TileModel",
+            "[0] DisabledWaitingForTransform,DisabledTileModel,DestroyTag,TileData,TileModelRegistrationState,TileModelSpatialData,DisabledDueToTimeout"
+        ],
+        "ProjectM.TimeScaleSystem": [
+            "[0] SendNetworkEventTag [S],SetTimeScaleDebugEvent",
+            "[1] TimeScale"
+        ],
+        "ProjectM.TopdownCameraSystem": [
+            "[1] TopdownCamera,HybridCamera,TopdownCameraState",
+            "[1] TopdownCamera,Translation,StudioListener,Rotation,CameraTarget,TopdownCameraState",
+            "[1] HybridCameraData",
+            "[0] BuildMenuState",
+            "[0] FreezeCameraMouseTracking"
+        ],
+        "ProjectM.TravelBuffSequenceSystem": [
+            "[0] Translation,LifeTime,Rotation,Buff,TravelBuff,Age,TravelBuffSequence [B]"
+        ],
+        "ProjectM.TravelBuffSystem": [
+            "[0] LifeTime,Buff,TravelBuff,Age"
+        ],
+        "ProjectM.TravelToTargetSystem": [
+            "[0] LifeTime,Buff,Age,TravelToTarget"
+        ],
+        "ProjectM.UI.AbilityBarParentBinderSystem": [
+            "[1] AbilityBar_Shared,AbilityBar_Client,LocalControlled,AbilityGroupSlotBuffer [B]"
+        ],
+        "ProjectM.UI.AchievementsSystem": [
+            "[1] AnnouncementHUDParent",
+            "[44] Prefab,PlayerCharacter [S],VBloodConsumeSource,Hideable",
+            "[0] Prefab [S],PlayerCharacter [S],Dead [S],Translation,VBloodConsumeSource,Hideable",
+            "[1] Script_BloodAltar_TrackVBloodUnit_Shared,Buff"
+        ],
+        "ProjectM.UI.ActionBarParentMapper": [
+            "[1] LocalControlled"
+        ],
+        "ProjectM.UI.ActionWheelSystem": [
+            "[1] UICanvasBase",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.AltarstationMenuMapper": [
+            "[0] AltarstationMenu",
+            "[1] LocalUser,Controller",
+            "[693] Prefab,ItemData"
+        ],
+        "ProjectM.UI.AltarstationSubMenuMapper": [
+            "[1] LocalUser,Controller",
+            "[0] AltarstationSubMenu"
+        ],
+        "ProjectM.UI.AnalyzeBloodFountainPlacementSystem": [
+            "[0] AnalyzeBloodFountainPlacement [S],PreviewPlacementBuff",
+            "[0] AnalyzeBloodFountainPlacement,PreviewPlacementBuff,AnalyzeBloodFountainPlacement_BlockBuffer [B]",
+            "[1] LocalCharacter",
+            "[0] PreviewPlacementBuff"
+        ],
+        "ProjectM.UI.AnnouncementHUDSystem": [
+            "[1] UICanvasBase",
+            "[1] DayNightCycle",
+            "[0] UnlockProgressionServerEvent",
+            "[0] LevelUpServerEvent",
+            "[0] AchievementClaimedServerEvent",
+            "[0] MapZoneDiscoveredEvent",
+            "[0] BasicAnnouncement",
+            "[160] MapZoneData",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.UI.BiteHUDSystem": [
+            "[1] LocalControlled,AbilityGroupSlotBuffer [B]"
+        ],
+        "ProjectM.UI.BloodAltarMenuMapper": [
+            "[0] BloodAltarMenu",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.BloodAltarSubMenuMapper": [
+            "[0] BloodAltarSubMenu",
+            "[1] LocalUser",
+            "[1] Script_BloodAltar_TrackVBloodUnit_Shared,Buff",
+            "[45] Prefab,VBloodConsumeSource"
+        ],
+        "ProjectM.UI.BuffBarParentSystem": [
+            "[0] ShowOnBuffBar,Buff"
+        ],
+        "ProjectM.UI.BuildGridSystem": [
+            "[0] PreviewPlacementBuff",
+            "[0] ShowBuildGrid"
+        ],
+        "ProjectM.UI.BuildMenuMapper": [
+            "[0] Translation,BuildMenuWallpaperOperation",
+            "[0] BuildMenu",
+            "[629] Prefab,BlueprintData,PrefabGUID",
+            "[5] Prefab,BlueprintData,ProgressionDependencyElement [B]",
+            "[1] LocalUser",
+            "[1] ServerTime",
+            "[0] BuildMenuPickedEntity",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.UI.BuildMenuWallpaperOperationSystem": [
+            "[0] Translation,BuildMenuWallpaperOperationSequenceData,BuildMenuWallpaperOperation",
+            "[1] HybridCameraData",
+            "[1] LocalUser",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.UI.BuildMenuWallpaperOperationSystem_Destroy": [
+            "[0] BuildMenuWallpaperOperationActiveSequenceElement [B],DestroyTag,BuildMenuWallpaperOperation"
+        ],
+        "ProjectM.UI.CharacterCraftingSubMenuMapper": [
+            "[0] CharacterCraftingSubMenu",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.CharacterCreationMenuMapper": [
+            "[0] InitData",
+            "[1] CustomizationFeatures",
+            "[0] CreateCharacterResponseEvent",
+            "[0] CharacterCreationMenu",
+            "[1] HybridCameraData",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.CharacterHUDBinderSystem": [
+            "[1] ControlledBy,CharacterHUD,CheckOnScreen",
+            "[5] HideTargetHUD,Buff",
+            "[7] Buff,BuffCategory",
+            "[1] Buff,ModifyTargetHUDHeight",
+            "[1] Data,HUDCacheInstance",
+            "[1] HUDCacheInstance",
+            "[8] Dead [S],Translation,CharacterHUD,Health,HealthBarHUD,CheckOnScreen",
+            "[0] AbsorbBuff,Buff"
+        ],
+        "ProjectM.UI.CharacterHUDMapper": [
+            "[1] UICanvasBase",
+            "[1] Data,CharacterHUDEntry,HUDCacheInstance"
+        ],
+        "ProjectM.UI.CharacterHudProgressBarSystem": [
+            "[8] CharacterHudProgressBar",
+            "[0] EntityCreator,LifeTime,UseCharacterHudProgressBar,EntityOwner,Buff,Age"
+        ],
+        "ProjectM.UI.CharacterMenuMapper": [
+            "[0] CharacterMenu"
+        ],
+        "ProjectM.UI.ClanClientSystem": [
+            "[0] ClanInviteRequest,Age"
+        ],
+        "ProjectM.UI.ClanMenuMapper": [
+            "[0] ClanMenu"
+        ],
+        "ProjectM.UI.ClientChatSystem": [
+            "[463] UserClient,User",
+            "[0] ToggleChatEvent",
+            "[0] ChatMessageServerEvent,ReceiveNetworkEventTag",
+            "[1] Team,LocalControlled",
+            "[463] NetworkId,User",
+            "[0] ChatInputFocused",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.ClockHUDSystem": [
+            "[1] LocalCharacter",
+            "[1] ServerTime"
+        ],
+        "ProjectM.UI.ContainerMenuMapper": [
+            "[0] InitData",
+            "[0] ContainerMenu",
+            "[693] Prefab,ItemData"
+        ],
+        "ProjectM.UI.DangerTextParentSystem": [
+            "[1] UICanvasBase",
+            "[0] LifeTime,Buff,SpellTarget,Age,Script_Siphon_Blood_Buff_DataShared",
+            "[15] Buff",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.DeathMenuMapper": [
+            "[0] DeathMenu",
+            "[141] MapIconData,PrefabGUID,SpawnLocationSelector"
+        ],
+        "ProjectM.UI.DebugLogsViewSystem": [
+            "[1] ServerDebugLogs"
+        ],
+        "ProjectM.UI.DebugMenuMapper": [
+            "[0] DebugMenu"
+        ],
+        "ProjectM.UI.DebugViewBinderSystem": [
+            "[0] ClientReplayPlayerEnabled",
+            "[0] ClientReplayRecorderEnabled",
+            "[1] LocalControlled",
+            "[289] Disabled",
+            "[34067] Disabled [S]",
+            "[463] User",
+            "[3699] NetworkId"
+        ],
+        "ProjectM.UI.DebugViewMapper": [
+            "[1] UICanvasBase"
+        ],
+        "ProjectM.UI.DragAndDropViewMapperSystem": [
+            "[1] UICanvasBase"
+        ],
+        "ProjectM.UI.EditableTileModelSequencesSystem": [
+            "[310] EditableTileModel_Client,EditableTileModel"
+        ],
+        "ProjectM.UI.EquipmentSubMenuMapper": [
+            "[0] EquipmentSubMenu"
+        ],
+        "ProjectM.UI.FeedInteractionProgressSystem": [
+            "[1] UICanvasBase",
+            "[0] LifeTime,Buff,SpellTarget,Age,Script_Siphon_Blood_Buff_DataShared",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.HUDEdgeSystem": [
+            "[207] Translation,ScreenEdgeIcon"
+        ],
+        "ProjectM.UI.InteractHUDSystem": [
+            "[1] EntityOwner,SpellTarget"
+        ],
+        "ProjectM.UI.InventoryMenuMapper": [
+            "[0] InventoryMenu",
+            "[693] Prefab,ItemData"
+        ],
+        "ProjectM.UI.InventorySubMenuMapper": [
+            "[0] InventorySubMenu",
+            "[1] LocalUser,User,Controller"
+        ],
+        "ProjectM.UI.JournalMenuMapper": [
+            "[1] AnnouncementHUDParent",
+            "[0] JournalMenu",
+            "[44] Prefab,PlayerCharacter [S],VBloodConsumeSource,Hideable",
+            "[1] AchievementOwner,LocalUser"
+        ],
+        "ProjectM.UI.LinksHUDSystem": [
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.MapMenuMapper": [
+            "[0] MapMenu",
+            "[0] InitData",
+            "[463] CryptSelection,User",
+            "[141] NetworkId,MapIconData,MapIconPosition,SpawnLocationSelector",
+            "[160] MapZoneDiscoverableElement [B],MapZonePolygonVertexElement [B],MapZoneData",
+            "[5] MapRegionNameComponent,Translation",
+            "[1] PathRecorderEntry [B],PathRecorder",
+            "[1309] Translation,MapIconData,Rotation,PrefabGUID",
+            "[1] WorldZoneId",
+            "[1] LocalControlled",
+            "[0] DisableSendAimInput",
+            "[0] ResetMovementCameraDirection"
+        ],
+        "ProjectM.UI.MapZoneAnnouncementSystem": [
+            "[0] MapZoneInfoElement",
+            "[1] UICanvasBase",
+            "[160] MapZonePolygonVertexElement [B],MapZoneData"
+        ],
+        "ProjectM.UI.MiniMapHUDSystem": [
+            "[1] PathRecorderEntry [B],PathRecorder",
+            "[1309] Translation,MapIconData,Rotation,PrefabGUID",
+            "[1] WorldZoneId"
+        ],
+        "ProjectM.UI.MountSubMenuMapper": [
+            "[0] InventorySubMenu"
+        ],
+        "ProjectM.UI.OpenHUDMenuSystem": [
+            "[1] UICanvasBase",
+            "[0] OpenMenuEvent"
+        ],
+        "ProjectM.UI.PreviewPlacementSystem": [
+            "[0] PreviewPlacementBuff"
+        ],
+        "ProjectM.UI.PrisonMenuMapper": [
+            "[0] PrisonMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.PrisonSubMenuMapper": [
+            "[0] PrisonSubMenu",
+            "[1] LocalUser,Controller",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.PylonstationMenuMapper": [
+            "[0] PylonstationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.PylonstationSubMenuMapper": [
+            "[0] PylonstationSubMenu",
+            "[1] LocalUser",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.RefinementstationMenuMapper": [
+            "[0] RefinementstationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.RefinementstationSubMenuMapper": [
+            "[0] RefinementstationSubMenu",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.RepairstationMenuMapper": [
+            "[0] RepairstationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.RepairstationSubMenuMapper": [
+            "[0] RepairstationSubMenu"
+        ],
+        "ProjectM.UI.ReplayHUDSystem": [
+            "[1] UICanvasBase",
+            "[1] TimeScale",
+            "[0] ClientReplayPlayerEnabled"
+        ],
+        "ProjectM.UI.ResearchstationMenuMapper": [
+            "[0] ResearchstationMenu",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.ResearchstationSubMenuMapper": [
+            "[0] ResearchstationSubMenu",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.ReservedEnemyTeamSystem": [
+            "[8] Team,CharacterHUD,AssignTeamColor,CheckOnScreen"
+        ],
+        "ProjectM.UI.RevealDiscoveredMapZonePresentationSystem": [
+            "[160] MapZonePolygonVertexElement [B],MapZoneData",
+            "[0] MapZoneDiscoveredEvent",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.RevealMapPresentationSystem": [
+            "[1] WorldZoneId",
+            "[1] LocalUser",
+            "[1] LocalCharacter"
+        ],
+        "ProjectM.UI.ReviveCancelSystem": [
+            "[1] UICanvasBase",
+            "[0] ReviveCancelBuff,Script_CreateGameplayEventOnTickAfterDelay_DataServer,LifeTime,Buff,Age",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.SalvagestationMenuMapper": [
+            "[0] SalvagestationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.SalvagestationSubMenuMapper": [
+            "[0] SalvagestationSubMenu",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.ScrollingCombatTextParentBinderSystem": [
+            "[1] UICanvasBase",
+            "[0] ScrollingCombatTextMessage,ScrollingCombatText",
+            "[1] HybridCameraData",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.UI.ScrollingCombatTextParentMapper": [
+            "[1] UICanvasBase"
+        ],
+        "ProjectM.UI.SelectAbilityMenuMapper": [
+            "[0] SelectAbilityMenu",
+            "[14] Prefab,VBloodShapeshiftData,PrefabGUID",
+            "[12] Prefab,VBloodEmoteData,PrefabGUID",
+            "[38] Prefab,VBloodAbilityData,PrefabGUID",
+            "[4] Buff,VBloodAbilityReplaceBuff"
+        ],
+        "ProjectM.UI.ServantCoffinstationMenuMapper": [
+            "[0] ServantCoffinstationMenu",
+            "[1] LocalUser,Controller",
+            "[693] Prefab,ItemData"
+        ],
+        "ProjectM.UI.ServantCoffinstationSubMenuMapper": [
+            "[0] ServantCoffinstationSubMenu",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.ServantInventorySubMenuMapper": [
+            "[0] ServantInventorySubMenu",
+            "[1] ServerTime",
+            "[1] LocalUser",
+            "[1] LocalUser,User,Controller"
+        ],
+        "ProjectM.UI.ServantMissionSubMenuMapper": [
+            "[0] ServantMissionSubMenu",
+            "[5] ServantCoffinstation",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.SocialMenuMapper": [
+            "[0] SocialMenu",
+            "[1] ControlledBy,Translation,CharacterVoiceActivity",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UI.SpawnMenuMapper": [
+            "[1] SpawnMenu",
+            "[1] SpawnSleepingBuff,Buff",
+            "[0] QuickStartup"
+        ],
+        "ProjectM.UI.TargetInfoParentSystem": [
+            "[0] AbsorbBuff,Buff",
+            "[5] HideTargetHUD,Buff"
+        ],
+        "ProjectM.UI.ToggleHUDDebugMenuSystem": [
+            "[1] UICanvasBase",
+            "[0] ToggleDebugMenuEvent"
+        ],
+        "ProjectM.UI.TooltipsParentSystem": [
+            "[1] UICanvasBase"
+        ],
+        "ProjectM.UI.UICanvasSystem": [
+            "[0] EntityOwner,FadeToBlack"
+        ],
+        "ProjectM.UI.UIDataSystem": [
+            "[1] UICanvasBase",
+            "[1] LocalUser",
+            "[1] LocalCharacter",
+            "[1] LocalControlled",
+            "[1] ServerTime",
+            "[1] DayNightCycle",
+            "[1] HybridCameraData",
+            "[1] TopdownCameraState"
+        ],
+        "ProjectM.UI.UISpawningSystem": [
+            "[0] SpawnUIPrefabOnLoad,Spawned [S]",
+            "[1] Prefab,Spawned"
+        ],
+        "ProjectM.UI.UnitSpawnerstationMenuMapper": [
+            "[0] UnitSpawnerstationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.UnitSpawnerstationSubMenuMapper": [
+            "[0] UnitSpawnerstationSubMenu"
+        ],
+        "ProjectM.UI.UpdateBottomBarTooltipSystem": [
+            "[0] AbsorbBuff,Buff"
+        ],
+        "ProjectM.UI.UseServantMenuMapper": [
+            "[0] UseServantMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.VBloodPanelMenuMapper": [
+            "[0] VBloodPanelMenu",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.VOIPMenuMapper": [
+            "[0] VOIPMenu"
+        ],
+        "ProjectM.UI.WorkstationMenuMapper": [
+            "[0] WorkstationMenu",
+            "[693] Prefab,ItemData",
+            "[1] LocalUser,Controller"
+        ],
+        "ProjectM.UI.WorkstationSubMenuMapper": [
+            "[0] WorkstationSubMenu",
+            "[1] LocalUser"
+        ],
+        "ProjectM.UpdateAttachedTranslationSystem": [
+            "[368] Translation,Attach"
+        ],
+        "ProjectM.UpdateMapIconsSystem": [
+            "[0] Translation,MapIconData,MapIcon_Client,MapIconTargetEntity,MapIcon_Server,MapIconPosition",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "ProjectM.UpdateSurfaceFootstepSystem": [
+            "[0] FootstepEvent"
+        ],
+        "ProjectM.UpdateTilePositionSystem": [
+            "[497] StaticTileModel [S],DisabledWaitingForTransform [S],LocalToWorld,TilePosition,DisabledTileModel [S],DestroyTag [S],DisabledDueToTimeout [S]"
+        ],
+        "ProjectM.UpdateUnlockedProgressionOnDeserialize": [
+            "[0] LocalUser,User",
+            "[0] UnlockedProgressionElement [B]"
+        ],
+        "ProjectM.UserTranslationCopySystem": [
+            "[463] Translation,Controller"
+        ],
+        "ProjectM.VisibilitySystem_Client": [
+            "[1] LocalControlled",
+            "[8] Hideable_CopyFromAttachParent [S],Hideable"
+        ],
+        "ProjectM.VisibilitySystem_CopyStateFromBuffTarget": [
+            "[1] Hideable_CopyFromAttachParent,Attached,Hideable"
+        ],
+        "ProjectM.VivoxClientSystem": [
+            "[0] VivoxServerRejectEvent",
+            "[0] VivoxServerLoginEvent",
+            "[0] VivoxServerChannelEvent",
+            "[1] CharacterVoiceActivity",
+            "[1] LocalUser",
+            "[1] CameraUser"
+        ],
+        "ProjectM.WorldFrameSystem": [
+            "[1] WorldFrame"
+        ],
+        "ProjectM.WorldVFXSystem": [
+            "[1] HybridCameraData"
+        ],
+        "ProjectM.ZoomModifierAreaSystem": [
+            "[0] LocalToWorld,ZoomModifierArea",
+            "[1] LocalUser",
+            "[1] LocalControlled"
+        ],
+        "ProjectM.ZoomModifierBuffSystem": [
+            "[0] ZoomModifierBuff,Buff",
+            "[1] LocalUser",
+            "[1] LocalControlled"
+        ],
+        "TutorialSystem": [
+            "[1] UICanvasBase",
+            "[0] InventorySubMenu",
+            "[0] LocalToWorld,TutorialPointPosition",
+            "[1] LocalCharacter",
+            "[1] LocalUser",
+            "[1] SyncedServerDebugSettings"
+        ],
+        "Unity.Entities.RetainBlobAssetSystem": [
+            "[14] RetainBlobAssets,BlobAssetOwner,RetainBlobAssetBatchPtr",
+            "[0] RetainBlobAssets,BlobAssetOwner,RetainBlobAssetPtr",
+            "[0] RetainBlobAssets,BlobAssetOwner,RetainBlobAssetBatchPtr [S]",
+            "[0] RetainBlobAssets,BlobAssetOwner [S],RetainBlobAssetBatchPtr",
+            "[0] RetainBlobAssets,BlobAssetOwner [S],RetainBlobAssetPtr"
+        ],
+        "Unity.Physics.Authoring.DisplayBodyColliders": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayBroadphaseAabbsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayColliderAabbsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayCollisionEventsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayContactsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayJointsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayMassPropertiesSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.Authoring.DisplayTriggerEventsSystem": [
+            "[0] PhysicsDebugDisplayData"
+        ],
+        "Unity.Physics.GraphicsIntegration.BufferInterpolatedRigidBodiesMotion": [
+            "[0] RotationEulerZXY [S],PhysicsVelocity,Translation,RotationEulerXYZ [S],PhysicsGraphicalInterpolationBuffer,PhysicsExclude [S],RotationEulerYZX [S],Rotation,RotationEulerYXZ [S],RotationEulerZYX [S],RotationEulerXZY [S]"
+        ],
+        "Unity.Physics.GraphicsIntegration.CopyPhysicsVelocityToSmoothing": [
+            "[0] PhysicsVelocity,PhysicsExclude [S],PhysicsGraphicalSmoothing"
+        ],
+        "Unity.Physics.GraphicsIntegration.SmoothRigidBodiesGraphicalMotion": [
+            "[0] LocalToWorld,Translation,PhysicsExclude [S],Rotation,PhysicsGraphicalSmoothing"
+        ],
+        "Unity.Physics.Systems.BuildPhysicsWorld": [
+            "[1] PhysicsStep"
+        ],
+        "Unity.Physics.Systems.StepPhysicsWorld": [
+            "[1] PhysicsStep"
+        ],
+        "Unity.Rendering.AddLodRequirementComponents": [
+            "[0] MeshLODComponent,RootLODRange [S]",
+            "[0] MeshLODComponent,RootLODWorldReferencePoint [S]",
+            "[0] MeshLODComponent,LODRange [S]",
+            "[0] MeshLODComponent,LODWorldReferencePoint [S]",
+            "[0] LODGroupWorldReferencePoint [S],MeshLODGroupComponent"
+        ],
+        "Unity.Rendering.AddWorldAndChunkRenderBounds": [
+            "[0] LocalToWorld,WorldRenderBounds [S],RenderBounds",
+            "[0] LocalToWorld,ChunkWorldRenderBounds [S],RenderBounds"
+        ],
+        "Unity.Rendering.FinalizePushSkinMatrixSystem": [
+            "[0] SkinMatrix [B]"
+        ],
+        "Unity.Rendering.HybridLightBakingDataSystem": [
+            "[0] LightBakingOutputDataRestoredTag [S],LightBakingOutputData"
+        ],
+        "Unity.Rendering.HybridRendererSystem": [
+            "[0] LODWorldReferencePoint,HybridChunkInfo,ChunkHeader,ChunkWorldRenderBounds,RootLODRange,WorldRenderBounds,RootLODWorldReferencePoint,LODRange",
+            "[20171] LocalToWorld,HybridChunkInfo,ChunkWorldRenderBounds,RenderMesh,WorldRenderBounds",
+            "[10174] HybridChunkInfo,ChunkHeader",
+            "[10174] HybridChunkInfo,ChunkHeader,ChunkWorldRenderBounds"
+        ],
+        "Unity.Rendering.LodRequirementsUpdateSystem": [
+            "[0] LocalToWorld,MeshLODComponent,RootLODRange,LODRange",
+            "[0] LocalToWorld,MeshLODComponent,LODWorldReferencePoint,RootLODWorldReferencePoint",
+            "[0] LocalToWorld,LODGroupWorldReferencePoint,MeshLODGroupComponent"
+        ],
+        "Unity.Rendering.ManageSHPropertiesSystem": [
+            "[0] BuiltinMaterialPropertyUnity_SHAr [S],CustomProbeTag,BlendProbeTag,AmbientProbeTag",
+            "[0] CustomProbeTag,BuiltinMaterialPropertyUnity_SHAg [S],BlendProbeTag,AmbientProbeTag",
+            "[0] CustomProbeTag,BlendProbeTag,BuiltinMaterialPropertyUnity_SHAb [S],AmbientProbeTag",
+            "[0] CustomProbeTag,BuiltinMaterialPropertyUnity_SHBr [S],BlendProbeTag,AmbientProbeTag",
+            "[0] CustomProbeTag,BlendProbeTag,BuiltinMaterialPropertyUnity_SHBg [S],AmbientProbeTag",
+            "[0] CustomProbeTag,BlendProbeTag,AmbientProbeTag,BuiltinMaterialPropertyUnity_SHBb [S]",
+            "[0] CustomProbeTag,BlendProbeTag,AmbientProbeTag,BuiltinMaterialPropertyUnity_SHC [S]",
+            "[0] BuiltinMaterialPropertyUnity_SHAr,CustomProbeTag [S],BuiltinMaterialPropertyUnity_SHBr,BuiltinMaterialPropertyUnity_SHAg,BlendProbeTag [S],BuiltinMaterialPropertyUnity_SHBg,BuiltinMaterialPropertyUnity_SHAb,AmbientProbeTag [S],BuiltinMaterialPropertyUnity_SHBb,BuiltinMaterialPropertyUnity_SHC"
+        ],
+        "Unity.Rendering.MatrixPreviousSystem": [
+            "[1064] LocalToWorld,BuiltinMaterialPropertyUnity_MatrixPreviousM"
+        ],
+        "Unity.Rendering.PrepareSkinMatrixSystem": [
+            "[0] DeformedEntity,SkinMatrixBufferIndex",
+            "[0] SkinMatrix [B]",
+            "[0] SkinningTag"
+        ],
+        "Unity.Rendering.PushMeshDataSystem": [
+            "[0] SharedMeshData,RenderMesh [S],DeformedEntity [S]",
+            "[0] SharedMeshData [S],RenderMesh,DeformedEntity",
+            "[0] SharedMeshData,RenderMesh,SkinMatrixBufferIndex"
+        ],
+        "Unity.Rendering.PushMeshDataSystemBase+ResizeBuffersSystem": [
+            "[0] SharedMeshData,RenderMesh [S],DeformedEntity [S]",
+            "[0] SharedMeshData [S],RenderMesh,DeformedEntity",
+            "[0] SharedMeshData",
+            "[0] RenderMesh,DeformedEntity"
+        ],
+        "Unity.Rendering.RenderBoundsUpdateSystem": [
+            "[1064] LocalToWorld,ChunkWorldRenderBounds,WorldRenderBounds,RenderBounds"
+        ],
+        "Unity.Rendering.UpdateHybridChunksStructure": [
+            "[0] LocalToWorld,HybridChunkInfo [S],ChunkWorldRenderBounds,DisableRendering [S],RenderMesh,WorldRenderBounds",
+            "[137] DisableRendering"
+        ],
+        "Unity.Scenes.GameObjectSceneSystem": [
+            "[0] RequestSceneLoaded,GameObjectReference,GameObjectSceneDependency [S],DisableSceneResolveAndLoad [S]",
+            "[0] GameObjectReference,RequestGameObjectSceneLoaded,GameObjectSceneData [S],DisableSceneResolveAndLoad [S]",
+            "[0] GameObjectReference,GameObjectSceneData"
+        ],
+        "Unity.Scenes.LiveLinkResolveSceneReferenceSystem": [
+            "[0] RequestSceneLoaded,EditorTriggeredLoad,SceneReference,ResolvedSectionEntity [B],WaitingForEditor [S],DisableSceneResolveAndLoad [S]",
+            "[0] RequestSceneLoaded,EditorTriggeredLoad,SceneReference,ResolvedSectionEntity [B],WaitingForEditor,DisableSceneResolveAndLoad [S]",
+            "[0] RequestSceneLoaded,EditorTriggeredLoad,SceneReference,ResolvedSectionEntity [B],ResolvedSceneHash,DisableSceneResolveAndLoad [S]"
+        ],
+        "Unity.Scenes.ResolveSceneReferenceSystem": [
+            "[0] RequestSceneLoaded,SceneReference,ResolvedSectionEntity [B],DisableSceneResolveAndLoad [S]"
+        ],
+        "Unity.Scenes.SceneSectionStreamingSystem": [
+            "[0] RequestSceneLoaded,StreamingState [S],ResolvedSectionPath,SceneSectionData,DisableSceneResolveAndLoad [S]",
+            "[0] RequestSceneLoaded [S],StreamingState,DisableSceneResolveAndLoad [S]",
+            "[4] PublicEntityRef [B],SceneTag",
+            "[152] SceneSectionData",
+            "[26226] SceneTag",
+            "[0] SceneTag,LinkedEntityGroup [B]"
+        ],
+        "Unity.Scenes.SceneSystem": [
+            "[0] StreamingState,SceneEntityReference [S]",
+            "[152] SceneReference"
+        ],
+        "Unity.Transforms.CopyInitialTransformFromGameObjectSystem": [
+            "[0] LocalToWorld,CopyInitialTransformFromGameObject,Transform"
+        ],
+        "Unity.Transforms.CopyTransformFromGameObjectSystem": [
+            "[0] LocalToWorld,CopyTransformFromGameObject,Transform"
+        ],
+        "Unity.Transforms.CopyTransformToGameObjectSystem": [
+            "[0] LocalToWorld,CopyTransformToGameObject,Transform"
+        ],
+        "Unity.Transforms.EndFrameCompositeRotationSystem": [
+            "[0] PostRotation,CompositeRotation,RotationPivotTranslation,Rotation,RotationPivot"
+        ],
+        "Unity.Transforms.EndFrameCompositeScaleSystem": [
+            "[0] CompositeScale,Scale,ScalePivotTranslation,NonUniformScale,ScalePivot"
+        ],
+        "Unity.Transforms.EndFrameLocalToParentSystem": [
+            "[6] LocalToWorld,Parent [S],Child [B]",
+            "[50] LocalToWorld,CopyTransformFromGameObject [S],LocalToParent,Parent,PhysicsGraphicalSmoothing [S]"
+        ],
+        "Unity.Transforms.EndFrameParentScaleInverseSystem": [
+            "[0] CompositeScale,Scale,NonUniformScale,Child [B]"
+        ],
+        "Unity.Transforms.EndFrameParentSystem": [
+            "[0] LocalToWorld,PreviousParent [S],LocalToParent,Parent",
+            "[0] PreviousParent,Parent [S]",
+            "[0] LocalToWorld,PreviousParent,LocalToParent,Parent",
+            "[0] LocalToWorld [S],Child [B]"
+        ],
+        "Unity.Transforms.EndFramePostRotationEulerSystem": [
+            "[0] PostRotationEulerXZY,PostRotation,PostRotationEulerZXY,PostRotationEulerXYZ,PostRotationEulerYZX,PostRotationEulerYXZ,PostRotationEulerZYX"
+        ],
+        "Unity.Transforms.EndFrameRotationEulerSystem": [
+            "[0] RotationEulerZXY,RotationEulerXYZ,RotationEulerYZX,Rotation,RotationEulerYXZ,RotationEulerZYX,RotationEulerXZY"
+        ],
+        "Unity.Transforms.EndFrameTRSToLocalToParentSystem": [
+            "[50] Translation,CompositeScale,LocalToParent,CompositeRotation,Scale,Rotation,ParentScaleInverse,NonUniformScale"
+        ],
+        "Unity.Transforms.EndFrameTRSToLocalToWorldSystem": [
+            "[6924] LocalToWorld,CopyTransformFromGameObject [S],Translation,CompositeScale,LocalToParent [S],CompositeRotation,Parent [S],Scale,Rotation,PhysicsGraphicalSmoothing [S],NonUniformScale"
+        ],
+        "Unity.Transforms.EndFrameWorldToLocalSystem": [
+            "[0] LocalToWorld,WorldToLocal"
+        ]
+    }
+}
